@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_fragment_0_pic_map"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/main_fragment0_road"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dm050"
+        android:layout_marginTop="@dimen/dm070"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_main_fragment0_road" />
+
+    <!--===================   路标按钮  1    ==================-->
+    <ImageButton
+        android:id="@+id/main_fragment0_laod_tag_bt_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/main_fragment0_road"
+        android:layout_marginRight="@dimen/dm020"
+        android:layout_marginTop="@dimen/dm015"
+        android:layout_toLeftOf="@id/main_fragment0_road"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_home_flag_disabled" />
+
+    <!--===================   路标按钮  2   ==================-->
+    <ImageButton
+        android:id="@+id/main_fragment0_laod_tag_bt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_fragment0_laod_tag_bt_0"
+        android:layout_marginLeft="@dimen/dm010"
+        android:layout_marginTop="@dimen/dm030"
+        android:layout_toRightOf="@id/main_fragment0_road"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_home_flag_disabled" />
+
+    <!--===================   路标按钮 3   ==================-->
+    <ImageButton
+        android:id="@+id/main_fragment0_laod_tag_bt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_fragment0_laod_tag_bt_1"
+        android:layout_marginRight="@dimen/dm010"
+        android:layout_marginTop="@dimen/dm045"
+        android:layout_toLeftOf="@id/main_fragment0_road"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_home_flag_disabled" />
+    <!--===================     4  ==================-->
+    <ImageButton
+        android:id="@+id/main_fragment0_laod_tag_bt_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_fragment0_laod_tag_bt_2"
+        android:layout_marginLeft="@dimen/dm008"
+        android:layout_marginTop="@dimen/dm050"
+        android:layout_toRightOf="@id/main_fragment0_road"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_home_flag_disabled" />
+
+
+    <!--=================== 7  ==================-->
+    <ImageButton
+        android:id="@+id/main_fragment0_laod_tag_bt_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/main_fragment0_road"
+        android:layout_marginBottom="@dimen/dm060"
+        android:layout_marginRight="@dimen/dm010"
+        android:layout_toLeftOf="@id/main_fragment0_road"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_home_flag_disabled" />
+    <!--===================  6==================-->
+    <ImageButton
+        android:id="@+id/main_fragment0_laod_tag_bt_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_fragment0_laod_tag_bt_6"
+        android:layout_marginBottom="@dimen/dm060"
+        android:layout_marginLeft="@dimen/dm005"
+        android:layout_toRightOf="@id/main_fragment0_road"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_home_flag_disabled" />
+
+    <!--===================   路标按钮  5  ==================-->
+    <ImageButton
+        android:id="@+id/main_fragment0_laod_tag_bt_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_fragment0_laod_tag_bt_5"
+        android:layout_marginBottom="@dimen/dm050"
+        android:layout_marginRight="@dimen/dm007"
+        android:layout_toLeftOf="@id/main_fragment0_road"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_home_flag_disabled" />
+
+    <ImageButton
+        style="@style/titlesize_666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dm040"
+        android:background="@null"
+        android:id="@+id/contracts_list_bt"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dm040"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_more_cicle" />
+</RelativeLayout>

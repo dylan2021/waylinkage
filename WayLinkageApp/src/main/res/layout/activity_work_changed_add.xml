@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_left_center"></include>
+
+    <include layout="@layout/layout_line_1px_divider"></include>
+
+    <com.android.waylinkage.view.PullScrollView
+        android:id="@+id/report_psv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dm020"
+                android:background="@drawable/shape_eeeeee_15px"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dm010"
+                android:paddingLeft="@dimen/dm025"
+                android:paddingRight="@dimen/dm025">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:clickable="true"
+                    android:onClick="seleteContracts"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="标段" />
+
+                    <TextView
+                        android:id="@+id/report_add_hetongduan_tv"
+                        style="@style/px26_999"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm250"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/dm020"
+                        android:drawableRight="@drawable/ic_next"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:hint="选择标段"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColorHint="@color/color_hint" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="seleteGongQu"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="工地" />
+
+                    <TextView
+                        android:id="@+id/report_add_gongqu_tv"
+                        style="@style/px26_999"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm250"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/dm020"
+                        android:drawableRight="@drawable/ic_next"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:hint="选择工地"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:id="@+id/selete_change_proceesor_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="seleteChangeProcessors">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="工序" />
+
+                    <TextView
+                        android:id="@+id/report_add_gongxu_tv"
+                        style="@style/px26_999"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm250"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/dm020"
+                        android:drawableRight="@drawable/ic_next"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:hint="选择工序"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="变更等级" />
+
+                    <TextView
+                        android:id="@+id/change_level_tv"
+                        style="@style/px26_999"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm250"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/dm020"
+                        android:drawableRight="@drawable/ic_next"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:hint="选填"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColorHint="@color/color_hint" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="变更部位" />
+
+
+                    <TextView
+                        android:id="@+id/change_place_tv"
+                        style="@style/px26_999"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/dm020"
+                        android:drawableRight="@drawable/ic_next"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:hint="选填"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dm120"
+                        android:text=""
+                        android:textColorHint="@color/color_hint" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="原设计图名称" />
+
+
+                    <TextView
+                        android:id="@+id/drawing_name_tv"
+                        style="@style/px26_999"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/dm020"
+                        android:drawableRight="@drawable/ic_next"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:hint="选填"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dm120"
+                        android:text=""
+                        android:textColorHint="@color/color_hint" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="图号" />
+
+                    <TextView
+                        android:id="@+id/drawing_number_tv"
+                        style="@style/px26_999"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/dm020"
+                        android:drawableRight="@drawable/ic_next"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:hint="选填"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dm120"
+                        android:text=""
+                        android:textColorHint="@color/color_hint" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/report_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <include layout="@layout/layout_line_1px_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dm020"
+                    android:paddingTop="@dimen/dm020">
+
+                    <View
+                        android:layout_width="@dimen/dm005"
+                        android:layout_height="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:background="@color/mainColor" />
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="变更计划" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dm020"
+                    android:background="@drawable/shape_eeeeee_15px"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dm020"
+                    android:paddingRight="@dimen/dm020">
+
+                    <LinearLayout
+                        android:id="@+id/plan_item_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/report_add_stage_time_seleted_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/dm020"
+                        android:gravity="center"
+                        android:padding="@dimen/dm020"
+                        android:paddingLeft="@dimen/dm025"
+                        android:paddingRight="@dimen/dm025"
+                        android:text="添加"
+                        android:textColor="@color/mainColor"
+                        android:textSize="@dimen/dm026" />
+
+                </LinearLayout>
+
+
+                <include layout="@layout/layout_line_1px_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/dm010"
+                    android:paddingLeft="@dimen/dm020"
+                    android:paddingTop="@dimen/dm015">
+
+                    <View
+                        android:layout_width="@dimen/dm005"
+                        android:layout_height="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:background="@color/mainColor" />
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="变更原因及说明" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/change_remark_tv"
+                    style="@style/px26_666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm010"
+                    android:background="@color/f5f5f5"
+                    android:focusableInTouchMode="true"
+                    android:gravity="top"
+                    android:hint="选填"
+                    android:minHeight="@dimen/desc_edit_height"
+                    android:padding="@dimen/dm015"
+                    android:text=""
+                    android:textColorHint="@color/color_hint" />
+
+                <include layout="@layout/layout_line_1px_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/card_detail_file_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm100"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020">
+
+
+                    <TextView
+                        android:id="@+id/card_detail_file_title"
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/app_title_height"
+                        android:layout_marginLeft="@dimen/dm025"
+                        android:gravity="center_vertical"
+                        android:text="@string/file_link_title" />
+
+                    <View
+                        android:layout_width="@dimen/dm005"
+                        android:layout_height="@dimen/dm020"
+                        android:layout_marginTop="@dimen/dm032"
+                        android:background="@color/mainColor" />
+
+                    <TextView
+                        android:id="@+id/file_link_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/app_title_height"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@drawable/ic_upload_attchment"
+                        android:gravity="center_vertical"
+                        android:paddingTop="@dimen/dm010"
+                        android:textColor="@color/color_hint"
+                        android:textSize="@dimen/dm026" />
+
+                    <com.android.waylinkage.view.ScrollListView
+                        android:id="@+id/horizontal_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_detail_file_title"
+                        android:clipToPadding="false"
+                        android:divider="@color/white"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:listSelector="@color/transparent"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"></com.android.waylinkage.view.ScrollListView>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.android.waylinkage.view.PullScrollView>
+
+    <Button
+        android:id="@+id/commit_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_bt_height"
+        android:layout_marginBottom="@dimen/dm015"
+        android:layout_marginLeft="@dimen/dm025"
+        android:layout_marginRight="@dimen/dm025"
+        android:layout_marginTop="@dimen/dm015"
+        android:background="@drawable/selector_login_bt"
+        android:text="@string/commit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm030" />
+</LinearLayout>

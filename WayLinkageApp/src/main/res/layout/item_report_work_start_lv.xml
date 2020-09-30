@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/f5f5f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm012"
+        android:layout_marginRight="@dimen/dm012"
+        android:layout_marginTop="@dimen/dm015"
+        android:background="@drawable/shape_corner15px_white"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dm015"
+        android:paddingLeft="@dimen/dm030"
+        android:paddingRight="@dimen/dm030"
+        android:paddingTop="@dimen/dm015">
+
+        <TextView
+            android:id="@+id/report_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dm013"
+            android:layout_marginRight="@dimen/dm010"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/unkonw_str"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/dm026" />
+
+        <TextView
+            android:id="@+id/report_item_post_invest_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dm005"
+            android:layout_marginRight="@dimen/dm010"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/dm026" />
+
+        <TextView
+            android:id="@+id/report_item_begin_end_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dm013"
+            android:layout_marginRight="@dimen/dm010"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/dm026" />
+        <include layout="@layout/layout_line_1px_divider" />
+
+        <RelativeLayout
+            android:id="@+id/bottom_tag_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm010"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/todo_tag_1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color999999"
+                android:textSize="@dimen/dm024" />
+
+
+            <TextView
+                android:id="@+id/report_item_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:paddingRight="@dimen/dm005"
+                android:text=""
+                android:textColor="@color/color999999"
+                android:textSize="@dimen/dm024" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

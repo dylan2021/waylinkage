@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_name_tv"
+            style="@style/px26_666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm005"
+            android:drawableRight="@drawable/ic_next"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dm015"
+        android:layout_marginTop="@dimen/dm005"
+        android:orientation="horizontal">
+
+        <LinearLayout
+        android:layout_marginRight="@dimen/dm020"
+            android:id="@+id/layout_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_corner5px_main_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dm007"
+            android:paddingRight="@dimen/dm007">
+
+            <TextView
+                android:id="@+id/item_period_tv"
+                style="@style/px22_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="工期" />
+
+            <ImageView
+                android:id="@+id/item_period_img_iv"
+                style="@style/px22_white"
+                android:layout_width="@dimen/dm020"
+                android:layout_height="@dimen/dm040"
+                android:scaleType="centerInside"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm022" />
+
+            <TextView
+                android:id="@+id/item_period_value_tv"
+                style="@style/px22_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_change_invest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dm020"
+            android:background="@drawable/shape_corner5px_main_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dm007"
+            android:paddingRight="@dimen/dm007">
+
+            <TextView
+                android:id="@+id/item_change_invest_tv"
+                style="@style/px22_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="产值" />
+
+            <ImageView
+                android:id="@+id/item_change_invest_img_iv"
+                style="@style/px22_white"
+                android:layout_width="@dimen/dm020"
+                android:layout_height="@dimen/dm040"
+                android:scaleType="centerInside"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm022" />
+
+            <TextView
+                android:id="@+id/item_change_invest_value_tv"
+                style="@style/px22_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_line_1px_divider" />
+</LinearLayout>

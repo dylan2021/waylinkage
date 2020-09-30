@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ngame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dm080">
+    <!--android:descendantFocusability="blocksDescendants"-->
+
+    <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_detail_file_list_item_iv"
+        android:layout_width="@dimen/card_detail_file_gv_item"
+        android:layout_height="@dimen/card_detail_file_gv_item"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        fresco:actualImageScaleType="centerInside"
+        fresco:failureImage="@drawable/ic_error_img_bg"
+        fresco:placeholderImage="@drawable/ic_error_img_bg"
+        fresco:placeholderImageScaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/dialog_center_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_toRightOf="@id/card_detail_file_list_item_iv"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="@dimen/dm520"
+        android:paddingTop="@dimen/dm010"
+        android:text=""
+        android:textColor="@color/color666666"
+        android:textSize="@dimen/dm024" />
+
+    <TextView
+        android:id="@+id/dialog_center_size_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_center_title_tv"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_toRightOf="@id/card_detail_file_list_item_iv"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/dm022" />
+
+    <Button
+        android:id="@+id/dialog_btn_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:drawableRight="@drawable/ic_delete"
+        android:paddingBottom="@dimen/dm020"
+        android:paddingTop="@dimen/dm020" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm001"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" />
+</RelativeLayout>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_left_center"></include>
+
+    <include layout="@layout/layout_line_1px_divider"></include>
+
+    <com.android.waylinkage.view.PullScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/f5f5f5"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/line_height"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_line_1px_divider"></include>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm090"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_bottom_line_divider_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dm030"
+                    android:text="@string/materail_type" />
+
+                <EditText
+                    android:id="@+id/add_materail_name_tv"
+                    style="@style/px26_999"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:gravity="right|center_vertical"
+                    android:hint="请填写材料名称"
+                    android:maxLines="1"
+                    android:paddingRight="@dimen/dm030"
+                    android:textColorHint="@color/color_hint"
+                    android:textCursorDrawable="@drawable/shape_cursor_color_main_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm090"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_bottom_line_divider_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dm030"
+                    android:text="@string/plan_in_date" />
+
+                <TextView
+                    android:id="@+id/add_materail_plan_in_date_tv"
+                    style="@style/px26_999"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:drawablePadding="@dimen/dm015"
+                    android:drawableRight="@drawable/ic_next"
+                    android:hint="@string/plan_in_date"
+                    android:paddingRight="@dimen/dm030"
+                    android:textColorHint="@color/color_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm090"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_bottom_line_divider_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dm030"
+                    android:text="@string/plan_in_numbers" />
+
+                <EditText
+                    android:id="@+id/add_materail_in_numbers_tv"
+                    style="@style/px26_999"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:gravity="right|center_vertical"
+                    android:hint="请填写计划进场数量"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:paddingRight="@dimen/dm030"
+                    android:textColorHint="@color/color_hint"
+                    android:textCursorDrawable="@drawable/shape_cursor_color_main_color" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm090"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_bottom_line_divider_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dm030"
+                    android:text="@string/unit" />
+
+                <EditText
+                    android:id="@+id/add_materail_unit_tv"
+                    style="@style/px26_999"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:hint="请填写材料单位"
+                    android:maxLength="4"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="@dimen/dm030"
+                    android:textColorHint="@color/color_hint"
+                    android:textCursorDrawable="@drawable/shape_cursor_color_main_color" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm090"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_bottom_line_divider_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dm030"
+                    android:text="质量标准" />
+
+                <EditText
+                    android:id="@+id/add_materail_quality_tv"
+                    style="@style/px26_999"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:hint="请填写质量标准"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="@dimen/dm030"
+                    android:textColorHint="@color/color_hint"
+                    android:textCursorDrawable="@drawable/shape_cursor_color_main_color" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm090"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_bottom_line_divider_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dm030"
+                    android:text="@string/materail_spec" />
+
+                <EditText
+                    android:id="@+id/add_materail_spec_tv"
+                    style="@style/px26_999"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:hint="请填写规格"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="@dimen/dm030"
+                    android:textColorHint="@color/color_hint"
+                    android:textCursorDrawable="@drawable/shape_cursor_color_main_color" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm090"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_bottom_line_divider_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dm030"
+                    android:text="@string/factory" />
+
+                <EditText
+                    android:id="@+id/add_materail_factory_tv"
+                    style="@style/px26_999"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:hint="请填写生产厂商"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="@dimen/dm030"
+                    android:textColorHint="@color/color_hint"
+                    android:textCursorDrawable="@drawable/shape_cursor_color_main_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm090"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_bottom_line_divider_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dm030"
+                    android:text="保管人员" />
+
+                <EditText
+                    android:id="@+id/add_materail_store_man_name_tv"
+                    style="@style/px26_999"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:hint="请填写保管人姓名"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="@dimen/dm030"
+                    android:textColorHint="@color/color_hint"
+                    android:textCursorDrawable="@drawable/shape_cursor_color_main_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm090"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dm060"
+                android:background="@drawable/shape_bottom_line_divider_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dm030"
+                    android:text="联系方式" />
+
+                <EditText
+                    android:id="@+id/add_materail_store_man_phone_tv"
+                    style="@style/px26_999"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:hint="请填写保管人电话"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="@dimen/dm030"
+                    android:textColorHint="@color/color_hint"
+                    android:textCursorDrawable="@drawable/shape_cursor_color_main_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.android.waylinkage.view.PullScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_bt_height"
+        android:layout_marginTop="@dimen/dm015"
+        android:layout_marginBottom="@dimen/dm015"
+        android:layout_marginLeft="@dimen/dm025"
+        android:layout_marginRight="@dimen/dm025"
+        android:background="@drawable/selector_login_bt"
+        android:onClick="onReportCommitClick"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm030" />
+</LinearLayout>

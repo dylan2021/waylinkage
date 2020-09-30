@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.waylinkage">
+
+    <uses-sdk
+        android:maxSdkVersion="23"
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- 蓝牙操作权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--监听APP安装与卸载权限-->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 百度推送权限 start -->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <permission
+        android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.android.waylinkage"
+        android:protectionLevel="normal"></permission>
+    <!-- 百度推送权限 end -->
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/appName"
+        android:supportsRtl="true"
+        android:theme="@style/theme_appcompat"
+        tools:replace="icon,label,theme,allowBackup">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme_appcompat_laucher"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ChooseProjectActivity" />
+        <activity android:name=".activity.frag0.EmployeeRecordActivity"></activity>
+        <activity android:name=".activity.main.ReportMenuActivity"></activity>
+        <activity android:name=".activity.main.WorkAppliesListActivity"></activity>
+        <activity android:name=".activity.main.WorkStartDetailActivity"></activity>
+        <activity android:name=".activity.main.WorkFinishDetailActivity"></activity>
+        <activity android:name=".activity.main.WorkChangeDetailActivity"></activity>
+        <activity android:name=".activity.main.ProcessorQualityAddActivity"></activity>
+        <activity android:name=".activity.main.ProcessorQualityListActivity"></activity>
+        <activity android:name=".activity.frag0.EdmDetailListActivity"></activity>
+        <activity android:name=".activity.frag0.EdmListActivity"></activity>
+        <activity android:name=".activity.frag0.MaterailAddActivity"></activity>
+        <activity android:name=".activity.main.PlanDesignActivity"></activity>
+        <activity android:name=".activity.main.ProcessorListActivity"></activity>
+        <activity android:name=".activity.main.PlanListActivity"></activity>
+        <activity android:name=".activity.main.MsgDetailActivity"></activity>
+        <activity
+            android:name=".activity.frag0.ApplyDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.frag0.EmployeeAddActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <activity
+            android:name=".activity.frag0.DeviceAddActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <activity
+            android:name=".activity.frag0.EmployeeDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.other.ContractListMapActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+
+        <activity
+            android:name="com.android.waylinkage.activity.GuideViewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.other.BuildSiteListMapActivity" />
+        <activity android:name=".activity.main.BuildSiteListActivity" />
+
+        <activity
+            android:name="com.android.waylinkage.activity.user.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.user.SendBindCodeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.user.FindPwdActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.user.ChangePwdActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".activity.frag0.RecordActivity" />
+
+        <activity android:name=".activity.frag0.NoticeListActivity" />
+        <activity android:name=".activity.other.ChangeProjectActivity" />
+        <activity android:name=".activity.user.SystemSettingsActivity" />
+
+        <activity android:name=".activity.user.UserCenterActivity" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <activity
+            android:name=".activity.other.SeePicActivity"
+            android:theme="@style/theme_appcompat_fullscreen" />
+
+        <activity android:name=".widget.mulpicture.MulPictureActivity" />
+
+        <activity android:name=".activity.main.ReportReformListActivity" />
+        <activity android:name=".activity.frag0.ProgressDetailActivity" />
+        <activity android:name=".activity.frag0.SafyListDetailActivity" />
+        <activity android:name=".activity.main.ProcessorProgressDetailActivity" />
+        <activity android:name=".activity.frag0.SafyListActivity" />
+        <activity android:name=".activity.main.ProcessorProgressListActivity" />
+        <activity android:name=".activity.frag0.ProgressAddActivity" />
+        <activity android:name=".activity.frag0.QualityAddActivity" />
+        <activity android:name=".activity.frag0.WorkStartAddActivity" />
+        <activity android:name=".activity.frag0.WorkFinishAddActivity" />
+        <activity android:name=".activity.frag0.WorkChangeAddActivity" />
+        <activity android:name=".activity.frag0.QualityDetailActivity" />
+        <activity android:name=".activity.frag0.QualityOverActivity" />
+        <activity android:name=".activity.frag0.QualityCheckTypeSettingActivity" />
+        <activity android:name=".activity.main.MoreActivity" />
+        <activity android:name=".activity.frag0.SafyAddActivity" />
+        <activity android:name=".activity.main.PlanProgressDetailActivity" />
+
+        <!--android 7.0 适配-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.android.waylinkage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <!--调用相机-->
+
+    </application>
+
+</manifest>

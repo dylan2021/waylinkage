@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.android.waylinkage.view.ExRadioGroup
+        android:id="@+id/road_map_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dm070"
+        android:layout_marginLeft="@dimen/dm015"
+        android:layout_marginBottom="@dimen/dm045"
+        app:lineSpacing="@dimen/dm035"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+    />
+</LinearLayout>

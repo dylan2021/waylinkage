@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/shape_safy_item_seleted_bg" android:state_selected="true" />
+    <item android:drawable="@drawable/shape_safy_item_unseleted_bg"
+        android:state_selected="false" android:state_pressed="false" />
+</selector>

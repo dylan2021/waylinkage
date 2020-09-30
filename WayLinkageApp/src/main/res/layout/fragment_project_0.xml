@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.waylinkage.view.PullScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:paddingLeft="@dimen/dm010"
+        android:paddingRight="@dimen/dm010"
+        android:paddingTop="@dimen/dm_030"
+        android:paddingBottom="@dimen/dm050"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_info_project"
+            layout="@layout/layout_project_fragment_0_project_info"
+            android:visibility="gone" /><!--项目-->
+        <include
+            android:id="@+id/layout_info_contract_section"
+            layout="@layout/layout_project_fragment_0_contract"
+            android:visibility="gone" /><!--标段-->
+        <include
+            android:id="@+id/layout_info_brige"
+            layout="@layout/layout_project_fragment_0_brige_info"
+            android:visibility="gone" /><!--桥梁-->
+        <include
+            android:id="@+id/layout_info_road"
+            layout="@layout/layout_project_fragment_0_road_info"
+            android:visibility="gone" /><!--路基-->
+        <include
+            android:id="@+id/layout_info_tunnel"
+            layout="@layout/layout_project_fragment_0_tunnel_info"
+            android:visibility="gone" /><!--隧道-->
+        <!--规划图集-->
+        <RelativeLayout
+            android:id="@+id/card_detail_file_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dm010"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dm030"
+            android:paddingLeft="@dimen/dm030"
+            android:paddingRight="@dimen/dm030">
+
+
+            <TextView
+                android:id="@+id/card_detail_file_title"
+                style="@style/px26_666"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dm060"
+                android:gravity="center_vertical"
+                android:text="@string/file_link_list" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm001"
+                android:layout_alignParentTop="true"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/file_link_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/app_title_height"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/ic_upload_attchment"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_hint"
+                android:textSize="@dimen/dm026" />
+
+            <com.android.waylinkage.view.ScrollListView
+                android:id="@+id/horizontal_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_detail_file_title"
+                android:clipToPadding="false"
+                android:divider="@color/white"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:listSelector="@color/transparent"
+                android:overScrollMode="never"
+                android:scrollbars="none"></com.android.waylinkage.view.ScrollListView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</com.android.waylinkage.view.PullScrollView>

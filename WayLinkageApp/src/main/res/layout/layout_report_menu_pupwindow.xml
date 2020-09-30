@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daasuu.bl.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:bl_arrowDirection="top"
+    app:bl_arrowHeight="@dimen/dm012"
+    app:bl_arrowPosition="@dimen/dm130"
+    app:bl_arrowWidth="@dimen/dm020"
+    app:bl_bubbleColor="@color/pupup_window"
+    app:bl_cornersRadius="@dimen/dm025"
+    app:bl_strokeColor="@color/white"
+    app:bl_strokeWidth="@dimen/dm005">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/report_menu_bt_0"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/popup_height"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dm040"
+            android:paddingRight="@dimen/dm040"
+            android:text="新增"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm026" />
+
+        <include layout="@layout/layout_line_1px_divider_dark" />
+
+        <Button
+            android:id="@+id/report_menu_bt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/popup_height"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dm040"
+            android:paddingRight="@dimen/dm040"
+            android:text="筛选"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm026" />
+    </LinearLayout>
+</com.daasuu.bl.BubbleLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dm020">
+
+
+    <TextView
+        android:id="@+id/link_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dm015"
+        android:text=""
+        android:textColor="@color/color_hint_dark"
+        android:textSize="@dimen/dm022" />
+
+    <ImageView
+        android:id="@+id/link_attach_iv"
+        android:padding="@dimen/dm020"
+        android:layout_width="@dimen/dm100"
+        android:layout_height="@dimen/dm100"
+        android:layout_below="@id/link_item_time"
+        android:layout_marginLeft="@dimen/dm030"
+        android:layout_marginTop="@dimen/dm015"
+        android:background="@color/linkBg"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_reform_detail_list" />
+
+    <TextView
+        android:id="@+id/link_item_name"
+        style="@style/px26_212121"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/link_item_time"
+        android:layout_marginRight="@dimen/dm020"
+        android:layout_marginTop="@dimen/dm015"
+        android:layout_toRightOf="@id/link_attach_iv"
+        android:background="@color/linkBg"
+        android:ellipsize="end"
+        android:padding="@dimen/dm010"
+        android:paddingLeft="@dimen/dm010"
+        android:singleLine="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/process_item_size"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/link_attach_iv"
+        android:layout_below="@id/link_item_name"
+        android:layout_marginRight="@dimen/dm020"
+        android:layout_toRightOf="@id/link_attach_iv"
+        android:background="@color/linkBg"
+        android:paddingBottom="@dimen/dm010"
+        android:paddingLeft="@dimen/dm010"
+        android:text="155.6KB"
+        android:textColor="@color/color_hint_dark"
+        android:textSize="@dimen/dm022" />
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_left_center"></include>
+
+    <include layout="@layout/layout_line_1px_divider"></include>
+
+    <com.android.waylinkage.view.PullScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/f5f5f5"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line_height"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dm030"
+                android:paddingTop="@dimen/dm015"
+                android:paddingBottom="@dimen/dm015"
+                android:paddingRight="@dimen/dm020"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm058"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="@dimen/dm220"
+                        android:layout_height="wrap_content"
+                        android:text="实际进度" />
+
+                    <TextView
+                        android:id="@+id/detail_actual_progress_tv"
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/progress_actual_plan_comple_value_tv"
+                        style="@style/px24_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm006"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm058"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="@dimen/dm220"
+                        android:layout_height="wrap_content"
+                        android:text="实际产值" />
+
+                    <TextView
+                        android:id="@+id/detail_actual_invers_tv"
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/inverse_plan_invers_tv"
+                        style="@style/px24_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm006"
+                        android:text="" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm058"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="@dimen/dm220"
+                        android:layout_height="wrap_content"
+                        android:text="实际起始时间" />
+
+                    <TextView
+                        android:id="@+id/actual_start_end_date_tv"
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm058"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="@dimen/dm220"
+                        android:layout_height="wrap_content"
+                        android:text="计划起始时间" />
+
+                    <TextView
+                        android:id="@+id/plan_start_end_date_tv"
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/card_detail_file_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dm030"
+                android:paddingRight="@dimen/dm030"
+                android:paddingTop="@dimen/dm020"
+                android:layout_marginBottom="@dimen/dm050"
+                android:layout_marginTop="@dimen/dm020"
+                android:paddingBottom="@dimen/dm030"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/card_detail_file_title"
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dm060"
+                    android:gravity="center_vertical"
+                    android:text="@string/file_link_title" />
+
+                <com.android.waylinkage.view.ScrollListView
+                    android:id="@+id/horizontal_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_detail_file_title"
+                    android:clipToPadding="false"
+                    android:divider="@color/white"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:listSelector="@color/transparent"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"></com.android.waylinkage.view.ScrollListView>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.android.waylinkage.view.PullScrollView>
+</LinearLayout>

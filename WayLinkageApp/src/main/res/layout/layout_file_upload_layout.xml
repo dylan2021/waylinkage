@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_detail_file_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/card_detail_file_title"
+        style="@style/px26_666"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical"
+        android:text="@string/file_link_title" />
+
+
+    <TextView
+        android:id="@+id/file_link_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/app_title_height"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dm010"
+        android:textColor="@color/color_hint"
+        android:textSize="@dimen/dm026"
+        android:drawableRight="@drawable/ic_upload_attchment"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm001"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"></View>
+
+
+    <com.android.waylinkage.view.ScrollListView
+        android:id="@+id/horizontal_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_detail_file_title"
+        android:clipToPadding="false"
+        android:divider="@color/white"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none"></com.android.waylinkage.view.ScrollListView>
+</RelativeLayout>

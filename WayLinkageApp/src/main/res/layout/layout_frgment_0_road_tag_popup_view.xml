@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daasuu.bl.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dm020"
+    app:bl_arrowDirection="top"
+    app:bl_arrowHeight="@dimen/dm010"
+    app:bl_arrowPosition="@dimen/dm020"
+    app:bl_arrowWidth="@dimen/dm015"
+    app:bl_cornersRadius="@dimen/dm020"
+    app:bl_strokeColor="@color/f5f5f5"
+    app:bl_strokeWidth="@dimen/dm001">
+
+    <TextView
+        android:id="@+id/frgmnet0_load_tag_popupview_tv"
+        style="@style/px26_999"
+        android:layout_width="@dimen/dm220"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_next"
+        android:layout_gravity="center_vertical"
+        android:drawablePadding="@dimen/dm010"
+        android:text=""></TextView>
+
+</com.daasuu.bl.BubbleLayout>

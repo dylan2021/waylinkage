@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/px22_333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm060"
+        android:layout_marginBottom="@dimen/dm020"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/dm028"
+        android:text="选择时间范围" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dm030"
+        android:layout_marginRight="@dimen/dm030"
+        android:layout_marginTop="@dimen/dm020"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/filter_time_bt_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="@dimen/dm030"
+            android:background="@drawable/selector_fragment_2_dialog_tab"
+            android:paddingBottom="@dimen/dm013"
+            android:paddingLeft="@dimen/dm020"
+            android:paddingRight="@dimen/dm020"
+            android:paddingTop="@dimen/dm013"
+            android:text="2018-01-01"
+            android:textSize="@dimen/dm026"
+            android:textColor="@color/color_seletor_main_color_666666" />
+
+        <View
+            android:layout_width="@dimen/dm060"
+            android:layout_height="@dimen/dm001"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dm030"
+            android:background="@color/c2c3c8"></View>
+
+        <TextView
+            android:id="@+id/filter_time_bt_1"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:background="@drawable/selector_fragment_2_dialog_tab"
+            android:button="@null"
+            android:paddingBottom="@dimen/dm013"
+            android:paddingLeft="@dimen/dm020"
+            android:paddingRight="@dimen/dm020"
+            android:paddingTop="@dimen/dm013"
+            android:text="2018-12-31"
+            android:textColor="@color/color_seletor_main_color_666666"
+            android:textSize="@dimen/dm026" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/menu_ok_bt"
+        android:layout_width="@dimen/dm450"
+        android:layout_height="@dimen/dm070"
+        android:background="@drawable/selector_login_bt"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/dm030"
+        android:layout_marginBottom="@dimen/dm040"
+        android:gravity="center"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm028" />
+
+</LinearLayout>

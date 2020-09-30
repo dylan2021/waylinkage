@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dm025"
+    android:paddingRight="@dimen/dm020"
+    android:paddingBottom="@dimen/dm010"
+    android:paddingTop="@dimen/dm015"
+    >
+    <TextView
+        android:id="@+id/report_item_tag_tv"
+        android:layout_width="@dimen/dm015"
+        android:layout_height="@dimen/dm015"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dm010"
+        android:background="@drawable/shape_circle_red"
+        android:text=""
+        android:textSize="@dimen/dm020" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/report_item_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/dm026" />
+
+        <TextView
+            android:id="@+id/report_item_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2018-08-05"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/dm022" />
+
+        <TextView
+            android:id="@+id/report_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/report_item_name_tv"
+            android:layout_marginTop="@dimen/dm010"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/dm005"
+            android:maxLines="2"
+            android:text="因为突发情况导致原本的驻地被大雨毁坏，现在不得不在2018-10-04号之前转移，请大家做好相应的措施....."
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/dm022" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

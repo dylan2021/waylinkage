@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="work_start_items">
+        <item>前期工作</item>
+        <item>开工计划</item>
+        <item>人员</item>
+        <item>设备</item>
+        <item>材料</item>
+    </string-array>
+
+</resources>

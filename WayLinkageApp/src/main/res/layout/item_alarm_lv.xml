@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/f5f5f5"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/dm070"
+    android:paddingTop="@dimen/dm025">
+
+    <ImageView
+        android:id="@+id/ic_category_iv"
+        android:layout_width="@dimen/dm070"
+        android:layout_height="@dimen/dm070"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_marginRight="@dimen/dm015"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_empty_circle_main_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/dm020"
+        android:paddingRight="@dimen/dm020"
+        android:layout_marginTop="@dimen/dm010"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_corner5px_white">
+
+
+        <TextView
+            android:id="@+id/category_tv"
+            android:paddingTop="@dimen/dm025"
+            style="@style/px28_212121_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/postil_item_time_tv"
+            style="@style/px20_a5a5a5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm010"
+            android:layout_below="@id/category_tv"
+            android:text=""
+            android:textColor="@color/color_hint_dark" />
+        <TextView
+            android:id="@+id/below_contract_tv"
+            android:layout_width="wrap_content"
+            style="@style/px26_212121"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text=""
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postil_item_time_tv"
+            android:layout_marginTop="@dimen/dm020" />
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/dm026"
+            android:paddingBottom="@dimen/dm025"
+            android:textColor="@color/yellow_overdue"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/below_contract_tv"
+            android:layout_marginTop="@dimen/dm013" />
+
+        <ImageView
+            android:id="@+id/alarm_tag_iv"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dm010"
+            android:text="" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

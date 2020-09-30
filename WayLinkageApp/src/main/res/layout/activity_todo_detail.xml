@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_left_center"></include>
+
+    <include layout="@layout/layout_line_1px_divider"></include>
+
+    <com.android.waylinkage.view.PullScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dm025">
+
+                <View
+                    android:layout_width="@dimen/dm005"
+                    android:layout_height="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm025"
+                    android:background="@color/mainColor" />
+
+                <TextView
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="审批信息" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm016"
+                android:layout_marginRight="@dimen/dm016"
+                android:background="@drawable/shape_eeeeee_15px"
+                android:orientation="vertical"
+                android:padding="@dimen/dm020">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020">
+
+                    <TextView
+                        android:id="@+id/check_status"
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="审批状态" />
+
+
+                    <TextView
+                        android:id="@+id/check_status_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/check_status"
+                        android:paddingLeft="@dimen/dm030"
+                        android:text="通过"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/dm026" />
+
+
+                    <TextView
+                        android:id="@+id/check_time_tv"
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dm030"
+                        android:text="2018.07.21" />
+
+                    <TextView
+                        android:id="@+id/check_time"
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/check_time_tv"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="审批时间" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white"></include>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm020">
+
+                    <TextView
+                        android:id="@+id/check_comment_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dm150"
+                        android:text="说明：情况属实，可以开工。" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/check_comment_tv"
+                        android:layout_marginRight="@dimen/dm150"
+                        android:layout_marginTop="@dimen/dm010"
+                        android:text="xxx工程建设监理有限公司\n2018.07.21" />
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/reform_ok"
+                        android:textColor="@color/green" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dm025">
+
+                <View
+                    android:layout_width="@dimen/dm005"
+                    android:layout_height="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm025"
+                    android:background="@color/mainColor" />
+
+                <TextView
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="基本信息" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm016"
+                android:layout_marginRight="@dimen/dm016"
+                android:background="@drawable/shape_eeeeee_15px"
+                android:orientation="vertical"
+                android:padding="@dimen/dm020">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="标段" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="第一标段" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_line_1px_white"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="承建单位" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="xxx建设公司" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_line_1px_white"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="监理单位" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="xxx工程建设监理有限公司" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_line_1px_white"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="工区" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="xx大桥" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_line_1px_white"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="起点桩号" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="k91+163.1" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_line_1px_white"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="终点桩号" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="k91+163.4" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_line_1px_white"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="申请开工日期" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="2018.07.20" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_line_1px_white"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="计划完成日期" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="2022.07.20" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dm025">
+
+                <View
+                    android:layout_width="@dimen/dm005"
+                    android:layout_height="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm025"
+                    android:background="@color/mainColor" />
+
+                <TextView
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="施工情况准备" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm016"
+                android:layout_marginRight="@dimen/dm016"
+                android:background="@drawable/shape_eeeeee_15px"
+                android:orientation="vertical"
+                android:padding="@dimen/dm020">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:text="材料" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="合格" />
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:text="试验" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="合格" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_line_1px_white"></include>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:text="机械设备" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="充足" />
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:text="施工组织" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="就绪" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_line_1px_white"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:text="征地拆迁" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="合格" />
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:text="计划进度" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="合格" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_line_1px_white"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm020">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="其他说明" />
+
+                    <TextView
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm050"
+                        android:text="气候条件适宜，近半个月无恶劣天气。" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dm025">
+
+                <View
+                    android:layout_width="@dimen/dm005"
+                    android:layout_height="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm025"
+                    android:background="@color/mainColor" />
+
+                <TextView
+                    style="@style/px26_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="附件 " />
+
+                <TextView
+                    style="@style/px24_999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dm003"
+                    android:text="* 点击附件可在线预览" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dm060"
+                android:layout_marginLeft="@dimen/dm016"
+                android:layout_marginRight="@dimen/dm016"
+                android:background="@drawable/shape_eeeeee_15px"
+                android:orientation="vertical"
+                android:padding="@dimen/dm020">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm010"
+                    android:autoLink="web"
+                    android:clickable="true"
+                    android:onClick="onLinkTv0Click"
+                    android:text="@string/pdf_text_0"
+                    android:textColor="@color/mainColor"
+                    android:textSize="@dimen/dm026" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm010"
+                    android:autoLink="web"
+                    android:clickable="true"
+                    android:onClick="onLinkTv1Click"
+                    android:text="@string/pdf_text_1"
+                    android:textColor="@color/mainColor"
+                    android:textSize="@dimen/dm026" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm010"
+                    android:autoLink="email"
+                    android:clickable="true"
+                    android:onClick="onLinkTv2Click"
+                    android:text="@string/pdf_text_2"
+                    android:textColor="@color/mainColor"
+                    android:textSize="@dimen/dm026" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.android.waylinkage.view.PullScrollView>
+</LinearLayout>

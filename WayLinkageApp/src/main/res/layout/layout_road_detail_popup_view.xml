@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daasuu.bl.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dm020"
+    android:paddingRight="@dimen/dm020"
+    android:paddingTop="@dimen/dm020"
+    app:bl_arrowDirection="top"
+    app:bl_arrowHeight="@dimen/dm000"
+    app:bl_arrowPosition="@dimen/dm020"
+    app:bl_arrowWidth="@dimen/dm015"
+    app:bl_bubbleColor="@color/white"
+    app:bl_cornersRadius="@dimen/dm035"
+    app:bl_strokeColor="@color/e5e5e5"
+    app:bl_strokeWidth="@dimen/dm001">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/road_detail_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="@dimen/dm017"
+            android:text=""
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/dm024"></TextView>
+
+        <TextView
+            android:id="@+id/road_detail_tv_gcjd"
+            style="@style/px24_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/road_detail_title_tv"
+            android:layout_marginTop="@dimen/dm018"
+            android:text="工程进度：" />
+
+        <TextView
+            android:id="@+id/process_tv"
+            style="@style/px24_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/road_detail_tv_gcjd"
+            android:layout_toRightOf="@id/road_detail_tv_gcjd"
+            android:text="逾期风险" />
+
+        <TextView
+            android:id="@+id/road_detail_tv_gczl"
+            style="@style/px24_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/road_detail_tv_gcjd"
+            android:layout_marginTop="@dimen/dm012"
+            android:text="工程质量：" />
+
+        <TextView
+            android:id="@+id/quaily_tv"
+            style="@style/px24_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/road_detail_tv_gczl"
+            android:layout_toRightOf="@id/road_detail_tv_gczl"
+            android:text="合格" />
+
+
+        <ImageButton
+            android:id="@+id/process_detail_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/road_detail_tv_gczl"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:paddingBottom="@dimen/dm035"
+            android:paddingLeft="@dimen/dm060"
+            android:paddingRight="@dimen/dm060"
+            android:paddingTop="@dimen/dm040"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_map_watch_more" />
+
+    </RelativeLayout>
+</com.daasuu.bl.BubbleLayout>

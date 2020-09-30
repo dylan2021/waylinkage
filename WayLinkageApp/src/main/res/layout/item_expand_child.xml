@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ngame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/label_expand_child"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/dm008"
+        android:paddingLeft="@dimen/dm030"
+        android:paddingTop="@dimen/dm008"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/dm024" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/expand_child_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dm010"
+        android:button="@drawable/selector_checkbox_maincolor_circle"
+        android:paddingRight="@dimen/dm040"
+        android:paddingTop="@dimen/dm010"
+        android:theme="@style/mainColor999CheckBox" />
+    <!--  android:scaleX="0.8"
+        android:scaleY="0.8" 选中框大小-->
+</LinearLayout>

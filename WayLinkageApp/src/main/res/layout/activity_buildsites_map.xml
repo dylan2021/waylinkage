@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tabs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_road_detail_map"
+        android:orientation="vertical">
+
+        <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~   道路  蛇形图   ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <ImageView
+            android:id="@+id/main_fragment0_road"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dm070"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_road_detail_road" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dm210"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dm060"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/map_bt_0"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/dm025"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_road_disabled" />
+
+            <ImageButton
+                android:id="@+id/map_bt_1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dm040"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_brige_disabled" />
+
+            <ImageButton
+                android:id="@+id/map_bt_2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_tunnel_disabled" />
+
+            <ImageButton
+                android:id="@+id/map_bt_3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_road_disabled" />
+
+            <ImageButton
+                android:id="@+id/map_bt_4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/dm005"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_brige_disabled" />
+
+            <ImageButton
+                android:id="@+id/map_bt_5"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dm035"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_tunnel_disabled" />
+
+            <ImageButton
+                android:id="@+id/map_bt_6"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_brige_disabled" />
+
+            <ImageButton
+                android:id="@+id/map_bt_7"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dm005"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_road_disabled" />
+
+            <ImageButton
+                android:id="@+id/map_bt_8"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_tunnel_disabled" />
+
+            <ImageButton
+                android:id="@+id/map_bt_9"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dm010"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_brige_disabled" />
+
+            <ImageButton
+                android:id="@+id/map_bt_10"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/dm025"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_tunnel_disabled" />
+
+            <ImageButton
+                android:id="@+id/map_bt_11"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dm040"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_road_disabled" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/road_detail_location_project_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm420"
+            android:layout_toLeftOf="@id/main_fragment0_road"
+            android:background="@null"
+            android:paddingRight="@dimen/dm090"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_station" />
+        <!-- 右下角  汇报，待办-->
+        <ImageButton
+            android:id="@+id/road_detail_mix_station_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/road_detail_location_project_bt"
+            android:layout_marginLeft="@dimen/dm420"
+            android:background="@null"
+            android:padding="@dimen/dm020"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_mixing" />
+        <!--===================   项目部署地 泥料加工厂 搅拌站==================-->
+
+
+        <ImageButton
+            android:id="@+id/road_detail_stone_plant_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/road_detail_mix_station_bt"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dm035"
+            android:layout_marginRight="@dimen/dm120"
+            android:background="@null"
+            android:padding="@dimen/dm020"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_stone" />
+
+        <ImageButton
+            style="@style/titlesize_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm050"
+            android:background="@null"
+            android:clickable="true"
+            android:onClick="onRoadMapBackClick"
+            android:padding="@dimen/dm030"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:id="@+id/center_tv"
+            android:layout_width="@dimen/dm480"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dm050"
+            android:text=""
+            android:textColor="@color/mainColorDrak"
+            android:textSize="@dimen/title_size" />
+
+        <ImageButton
+            style="@style/titlesize_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dm040"
+            android:background="@null"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="onSearchClick"
+            android:padding="@dimen/dm030"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_more_cicle" />
+    </RelativeLayout>
+
+
+</LinearLayout>

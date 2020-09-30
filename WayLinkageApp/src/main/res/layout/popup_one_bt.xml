@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daasuu.bl.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:bl_arrowDirection="bottom"
+    app:bl_arrowHeight="@dimen/dm012"
+    app:bl_arrowPosition="@dimen/dm050"
+    app:bl_arrowWidth="@dimen/dm020"
+    app:bl_bubbleColor="@color/pupup_window"
+    app:bl_cornersRadius="@dimen/dm025"
+    app:bl_strokeColor="@color/white"
+    app:bl_strokeWidth="@dimen/dm001">
+
+    <Button
+        android:id="@+id/report_menu_bt_0"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dm068"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dm030"
+        android:paddingRight="@dimen/dm030"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm026" />
+
+</com.daasuu.bl.BubbleLayout>

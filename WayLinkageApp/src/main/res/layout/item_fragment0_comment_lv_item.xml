@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dm015"
+    android:paddingLeft="@dimen/dm025"
+    android:paddingRight="@dimen/dm020"
+    android:paddingTop="@dimen/dm015">
+
+    <TextView
+        android:id="@+id/report_item_status_tv"
+        android:layout_width="@dimen/dm015"
+        android:layout_height="@dimen/dm015"
+        android:layout_marginTop="@dimen/dm012"
+        android:layout_marginLeft="@dimen/dm005"
+        android:background="@drawable/shape_circle_red"
+        android:text=""
+        android:textSize="@dimen/dm020" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/report_item_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/dm026" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/report_item_name_tv"
+            android:paddingTop="@dimen/dm005"
+            android:text=""
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/dm022" />
+
+        <TextView
+            android:id="@+id/report_item_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dm005"
+            android:paddingTop="@dimen/dm005"
+            android:text=""
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/dm022" />
+
+        <TextView
+            android:id="@+id/report_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/report_item_name_tv"
+            android:layout_marginTop="@dimen/dm010"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/dm026" />
+
+        <LinearLayout
+            android:id="@+id/bottom_tag_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/report_item_title_tv"
+            android:layout_marginTop="@dimen/dm015">
+            <TextView
+                android:id="@+id/todo_tag_1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_eeeeee_5px"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dm003"
+                android:paddingLeft="@dimen/dm008"
+                android:paddingRight="@dimen/dm008"
+                android:paddingTop="@dimen/dm003"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/aaaaaa"
+                android:textSize="@dimen/dm020" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

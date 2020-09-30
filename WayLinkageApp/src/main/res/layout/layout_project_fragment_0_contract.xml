@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dm015"
+    android:layout_marginRight="@dimen/dm015"
+    android:layout_marginTop="@dimen/dm030"
+    android:background="@drawable/shape_eeeeee_15px"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dm015"
+    android:paddingRight="@dimen/dm015"
+    tools:showIn="@layout/fragment_project_0">
+
+    <LinearLayout
+        android:id="@+id/proj_fragment_top_ensure_status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/proj_fragment0_top_xmmc"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="名称" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_top_xmmc_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm040"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/proj_fragment0_bianhao"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总投资" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_bianhao_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/proj_fragment0_bianhao"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+
+        <TextView
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/proj_fragment0_bianhao_tv"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/money_unit" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_kg_date"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm320"
+            android:text="编号" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_kg_date_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm025"
+            android:layout_toRightOf="@id/proj_fragment0_kg_date"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/proj_fragment0_zc"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总工期" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_zc_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/proj_fragment0_zc"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+
+        <TextView
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/proj_fragment0_zc_tv"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/period_unit" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_wg_date"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm320"
+            android:text="总长" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_wg_date_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm025"
+            android:layout_toRightOf="@id/proj_fragment0_wg_date"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+        <TextView
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/proj_fragment0_wg_date_tv"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/lenth_unit" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/proj_fragment0_jsbz"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计划开工日期" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_jsbz_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/proj_fragment0_jsbz"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/proj_fragment0_ljwf"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计划完工日期" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_ljwf_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/proj_fragment0_ljwf"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/proj_fragment0_0"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起点桩号" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_0_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/proj_fragment0_0"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/proj_fragment0_l"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="终点桩号" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_l_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/proj_fragment0_l"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/proj_fragment0_3"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实际开工日期" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_3_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/proj_fragment0_3"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/proj_fragment0_hdsl"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实际完工日期" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_hdsl_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/proj_fragment0_hdsl"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/proj_fragment0_ljkd"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="承建单位" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_ljkd_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/proj_fragment0_ljkd"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/proj_fragment0_5"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="监理单位" />
+
+        <TextView
+            android:id="@+id/proj_fragment0_5_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/proj_fragment0_5"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dm020"
+        android:paddingTop="@dimen/dm020">
+
+        <TextView
+            android:id="@+id/proj_fragment0_gsbj"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="描述" />
+  
+        <TextView
+            android:id="@+id/proj_fragment0_gsbj_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/desc_tv_line_spacing_extra"
+            android:text="-" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_left_center"></include>
+
+    <include layout="@layout/layout_line_1px_divider"></include>
+
+    <com.android.waylinkage.view.PullScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dm060"
+                android:layout_marginLeft="@dimen/dm020"
+                android:layout_marginRight="@dimen/dm020"
+                android:layout_marginTop="@dimen/dm020"
+                android:background="@drawable/shape_eeeeee_15px"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dm010"
+                android:paddingLeft="@dimen/dm020"
+                android:paddingRight="@dimen/dm020">
+
+
+                <TextView
+                    android:id="@+id/report_drtail_tv_0"
+                    style="@style/px26_666"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text=""
+                    android:textStyle="bold" />
+
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height">
+
+                    <TextView
+                        android:id="@+id/report_detail_processor_tv"
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="计划名称" />
+
+                    <TextView
+                        android:id="@+id/report_drtail_tv_1"
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="本次汇报周期" />
+
+                    <TextView
+                        android:id="@+id/report_drtail_tv_3"
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="本次汇报产值" />
+
+                    <TextView
+                        android:id="@+id/report_drtail_tv_2"
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-" />
+
+                </RelativeLayout>
+
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="确认已完成产值" />
+
+                    <EditText
+                        android:id="@+id/report_drtail_tv_6"
+                        style="@style/px26_999"
+                        android:layout_width="@dimen/dm150"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:gravity="right|center_vertical"
+                        android:hint="(万元)"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColorHint="@color/color_hint"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/report_drtail_tv_66"
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text=""
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="汇报人" />
+
+                    <TextView
+                        android:id="@+id/report_drtail_tv_4"
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="汇报时间" />
+
+                    <TextView
+                        android:id="@+id/report_drtail_tv_5"
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="阶段计划产值" />
+
+                    <TextView
+                        android:id="@+id/report_drtail_tv_7"
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="阶段计划进度" />
+
+                    <TextView
+                        android:id="@+id/report_drtail_tv_8"
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="阶段计划开始日期" />
+
+                    <TextView
+                        android:id="@+id/report_drtail_tv_9"
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="阶段计划结束日期" />
+
+                    <TextView
+                        android:id="@+id/report_drtail_tv_10"
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="阶段计划工期" />
+
+                    <TextView
+                        android:id="@+id/report_drtail_tv_11"
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/app_title_height">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="说明" />
+
+                    <TextView
+                        android:id="@+id/remark_tv"
+                        style="@style/px26_999"
+                        android:layout_width="@dimen/dm500"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:paddingBottom="@dimen/dm015"
+                        android:paddingTop="@dimen/dm015"
+                        android:text="-" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_file_upload_layout" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.android.waylinkage.view.PullScrollView>
+
+    <Button
+        android:id="@+id/commit_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_bt_height"
+        android:layout_marginBottom="@dimen/dm015"
+        android:layout_marginLeft="@dimen/dm025"
+        android:layout_marginRight="@dimen/dm025"
+        android:layout_marginTop="@dimen/dm015"
+        android:visibility="gone"
+        android:background="@drawable/selector_login_bt"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm030" />
+</LinearLayout>

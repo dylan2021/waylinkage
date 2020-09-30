@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_left_center" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm030"
+        android:padding="@dimen/dm030">
+
+        <TextView
+            android:id="@+id/report_menu_title0"
+            style="@style/px28_333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dm040"
+            android:textStyle="bold"
+            android:text="工程监控" />
+
+        <TextView
+            android:id="@+id/report_process_bt"
+            style="@style/px24_212121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_below="@id/report_menu_title0"
+            android:background="@null"
+            android:drawablePadding="@dimen/dm010"
+            android:drawableTop="@drawable/ic_auditing_schedule"
+            android:gravity="center"
+            android:onClick="oMenuProcessClick"
+            android:paddingBottom="@dimen/dm020"
+            android:paddingLeft="@dimen/dm020"
+            android:paddingTop="@dimen/dm010"
+            android:text="进度" />
+
+        <TextView
+            android:id="@+id/report_process_red_tv"
+            android:layout_width="@dimen/dm025"
+            android:layout_height="@dimen/dm025"
+            android:layout_alignRight="@id/report_process_bt"
+            android:layout_alignTop="@id/report_process_bt"
+            android:background="@drawable/shape_circle_red"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm016"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/report_quality_bt"
+            style="@style/px24_212121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/report_menu_title0"
+            android:layout_marginLeft="@dimen/dm060"
+            android:layout_toRightOf="@id/report_process_bt"
+            android:background="@null"
+            android:drawablePadding="@dimen/dm010"
+            android:drawableTop="@drawable/ic_auditing_quality"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="onMenuQuailtyClick"
+            android:paddingBottom="@dimen/dm020"
+            android:paddingLeft="@dimen/dm020"
+            android:paddingTop="@dimen/dm010"
+            android:text="质量" />
+
+        <TextView
+            android:id="@+id/report_quality_red_tv"
+            android:layout_width="@dimen/dm025"
+            android:layout_height="@dimen/dm025"
+            android:layout_alignRight="@id/report_quality_bt"
+            android:layout_alignTop="@id/report_quality_bt"
+            android:background="@drawable/shape_circle_red"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm016"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dm030">
+
+        <TextView
+            android:id="@+id/report_menu_title1"
+            style="@style/px28_333333"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dm040"
+            android:text="工程管理" />
+
+        <TextView
+            android:id="@+id/report_start_bt"
+            style="@style/px24_212121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/report_menu_title1"
+            android:background="@null"
+            android:clickable="true"
+            android:drawablePadding="@dimen/dm010"
+            android:drawableTop="@drawable/ic_auditing_begin"
+            android:gravity="center"
+            android:onClick="onMenuWorkStartClick"
+            android:paddingBottom="@dimen/dm020"
+            android:paddingLeft="@dimen/dm020"
+            android:paddingTop="@dimen/dm010"
+            android:text="开工" />
+
+        <TextView
+            android:id="@+id/report_start_red_tv"
+            android:layout_width="@dimen/dm025"
+            android:layout_height="@dimen/dm025"
+            android:layout_alignRight="@id/report_start_bt"
+            android:layout_alignTop="@id/report_start_bt"
+            android:background="@drawable/shape_circle_red"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm016"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/report_finish_bt"
+            style="@style/px24_212121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_below="@id/report_menu_title1"
+            android:layout_marginLeft="@dimen/dm060"
+            android:layout_toRightOf="@id/report_start_bt"
+            android:background="@null"
+            android:drawablePadding="@dimen/dm010"
+            android:drawableTop="@drawable/ic_auditing_complete"
+            android:gravity="center"
+            android:onClick="onMenuWorkFinishClick"
+            android:paddingBottom="@dimen/dm020"
+            android:paddingLeft="@dimen/dm020"
+            android:paddingTop="@dimen/dm010"
+            android:text="完工" />
+
+        <TextView
+            android:id="@+id/report_finish_red_tv"
+            android:layout_width="@dimen/dm025"
+            android:layout_height="@dimen/dm025"
+            android:layout_alignRight="@id/report_finish_bt"
+            android:layout_alignTop="@id/report_finish_bt"
+            android:background="@drawable/shape_circle_red"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm016"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/report_change_bt"
+            style="@style/px24_212121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/report_menu_title1"
+            android:clickable="true"
+            android:layout_marginLeft="@dimen/dm060"
+            android:layout_toRightOf="@id/report_finish_bt"
+            android:background="@null"
+            android:drawablePadding="@dimen/dm010"
+            android:drawableTop="@drawable/ic_auditing_change"
+            android:gravity="center"
+            android:onClick="onMenuWorkChangeClick"
+            android:paddingBottom="@dimen/dm020"
+            android:paddingLeft="@dimen/dm020"
+            android:paddingTop="@dimen/dm010"
+            android:text="变更" />
+
+        <TextView
+            android:id="@+id/report_change_red_tv"
+            android:layout_width="@dimen/dm025"
+            android:layout_height="@dimen/dm025"
+            android:layout_alignRight="@id/report_change_bt"
+            android:layout_alignTop="@id/report_change_bt"
+            android:background="@drawable/shape_circle_red"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm016"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ngame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dm500"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm060"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/px26_999"
+                android:gravity="right"
+                android:layout_width="@dimen/dm200"
+                android:layout_height="wrap_content"
+                android:text="设备名称" />
+
+            <TextView
+                android:id="@+id/device_item_tv_1"
+                style="@style/px26_212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/device_item_margin_left" />
+        </RelativeLayout>
+
+          
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm060"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/px26_999"
+                android:gravity="right"
+                android:layout_width="@dimen/dm200"
+                android:layout_height="wrap_content"
+                android:text="编号" />
+
+            <TextView
+                android:id="@+id/device_item_tv_0"
+                style="@style/px26_212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/device_item_margin_left" />
+        </RelativeLayout>
+
+          
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm060"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/px26_999"
+                android:gravity="right"
+                android:layout_width="@dimen/dm200"
+                android:layout_height="wrap_content"
+                android:text="型号" />
+
+            <TextView
+                android:id="@+id/device_item_tv_9"
+                style="@style/px26_212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/device_item_margin_left" />
+        </RelativeLayout>
+
+          
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm060"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/px26_999"
+                android:gravity="right"
+                android:layout_width="@dimen/dm200"
+                android:layout_height="wrap_content"
+                android:text="实际进场日期" />
+
+            <TextView
+                android:id="@+id/device_item_tv_2"
+                style="@style/px26_212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/device_item_margin_left" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm060"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/px26_999"
+                android:gravity="right"
+                android:layout_width="@dimen/dm200"
+                android:layout_height="wrap_content"
+                android:text="实际进场数量" />
+
+            <TextView
+                android:id="@+id/device_item_tv_22"
+                style="@style/px26_212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/device_item_margin_left" />
+        </RelativeLayout>
+          
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm060"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/px26_999"
+                android:gravity="right"
+                android:layout_width="@dimen/dm200"
+                android:layout_height="wrap_content"
+                android:text="运行状态" />
+
+            <TextView
+                android:id="@+id/device_item_tv_4"
+                style="@style/px26_212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/device_item_margin_left" />
+        </RelativeLayout>
+
+          
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm060"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/px26_999"
+                android:gravity="right"
+                android:layout_width="@dimen/dm200"
+                android:layout_height="wrap_content"
+                android:text="负责人" />
+
+            <TextView
+                android:id="@+id/device_item_tv_6"
+                style="@style/px26_212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/device_item_margin_left" />
+        </RelativeLayout>
+
+          
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm060"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/px26_999"
+                android:gravity="right"
+                android:layout_width="@dimen/dm200"
+                android:layout_height="wrap_content"
+                android:text="联系方式" />
+
+            <TextView
+                android:id="@+id/device_item_tv_7"
+                style="@style/px26_212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/device_item_margin_left" />
+        </RelativeLayout>
+
+          
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm060"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/px26_999"
+                android:gravity="right"
+                android:layout_width="@dimen/dm200"
+                android:layout_height="wrap_content"
+                android:text="来源" />
+
+            <TextView
+                android:id="@+id/device_item_tv_8"
+                style="@style/px26_212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/device_item_margin_left" />
+        </RelativeLayout>
+
+          
+    </LinearLayout>
+</LinearLayout>

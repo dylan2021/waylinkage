@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/saft_accident_flag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dm020"
+    android:layout_marginBottom="@dimen/dm015"
+    android:layout_marginRight="@dimen/dm020"
+    android:layout_marginTop="@dimen/dm015"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_safy_add">
+
+    <com.android.waylinkage.view.ExRadioGroup
+        android:id="@+id/saft_flag1_erg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dm010"
+        android:layout_marginBottom="@dimen/dm010"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:lineSpacing="@dimen/dm015" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dm010"
+        android:paddingTop="@dimen/dm015">
+
+        <View
+            android:layout_width="@dimen/dm005"
+            android:layout_height="@dimen/dm020"
+            android:layout_marginRight="@dimen/dm025"
+            android:background="@color/mainColor" />
+
+        <TextView
+            android:id="@+id/layout_title_0_tv"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="选择不合格项" />
+
+    </LinearLayout>
+
+    <com.android.waylinkage.view.ExRadioGroup
+        android:id="@+id/saft_flag2_erg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dm020"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:lineSpacing="@dimen/dm015" />
+
+
+</LinearLayout>

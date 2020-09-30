@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:onClick="onBackClick"
+            android:paddingLeft="@dimen/dm030"
+            android:paddingRight="@dimen/dm030"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="@dimen/dm600"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            style="@style/titlesize_212121"
+            android:singleLine="true"
+            android:text="详细资料"
+           />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_divider" />
+
+    <com.android.waylinkage.view.PullScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dm040"
+                android:layout_marginLeft="@dimen/dm020"
+                android:layout_marginRight="@dimen/dm020"
+                android:layout_marginTop="@dimen/dm030"
+                android:background="@drawable/shape_eeeeee_15px"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dm005"
+                android:paddingLeft="@dimen/dm020"
+                android:paddingRight="@dimen/dm020"
+                android:paddingTop="@dimen/dm005">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="姓名" />
+
+                    <TextView
+                        android:id="@+id/name_tv"
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:layout_marginRight="@dimen/dm060"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="-"
+                        android:textColorHint="@color/color_hint" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="@dimen/dm005"
+                        android:layout_centerVertical="true"
+                        android:onClick="onPeopleAllotRecordClick"
+                        android:paddingRight="@dimen/dm030"
+                        android:paddingLeft="@dimen/dm030"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_people_details_allocation" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="性别" />
+
+                    <TextView
+                        android:id="@+id/sex_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-"
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="身份证号" />
+
+                    <TextView
+                        android:id="@+id/id_number_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-"
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="年龄" />
+
+                    <TextView
+                        android:id="@+id/age_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="联系电话" />
+
+                    <TextView
+                        android:id="@+id/phone_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-"
+                        android:textColorHint="@color/color_hint" />
+
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="联系地址" />
+
+                    <TextView
+                        android:id="@+id/address_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-"
+                        android:textColorHint="@color/color_hint" />
+
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="工作状态" />
+
+                    <TextView
+                        android:id="@+id/work_status_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-"
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="实际入场日期" />
+
+                    <TextView
+                        android:id="@+id/real_in_date"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="实际退场日期" />
+
+                    <TextView
+                        android:id="@+id/real_out_date"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="/" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="资质证书" />
+
+                    <TextView
+                        android:id="@+id/certification_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-"
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="工作年限" />
+
+                    <TextView
+                        android:id="@+id/work_year_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-"
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="学历" />
+
+                    <TextView
+                        android:id="@+id/study_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-"
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="紧急联系人" />
+
+                    <TextView
+                        android:id="@+id/emergency_name_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-"
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="紧急联系方式" />
+
+                    <TextView
+                        android:id="@+id/emergency_phone_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/people_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="-"
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.android.waylinkage.view.PullScrollView>
+
+
+</LinearLayout>

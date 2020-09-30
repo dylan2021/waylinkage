@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout xmlns:tabs="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/msg_tab_layout"
+        android:layout_width="@dimen/dm400"
+        android:layout_height="@dimen/app_title_height"
+        android:layout_centerHorizontal="true"
+        tabs:tabGravity="fill"
+        tabs:tabIndicatorColor="@color/mainColor"
+        tabs:tabIndicatorHeight="@dimen/tab_line_height"
+        tabs:tabMode="fixed"
+        tabs:tabSelectedTextColor="@color/color212121"
+        tabs:tabTextAppearance="@style/TabLayout_TextStyle_px30"
+        tabs:tabTextColor="@color/color999999" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/msg_tab_layout">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/f5f5f5"
+            android:clipToPadding="false"
+            android:divider="@color/divider_color"
+            android:dividerHeight="@dimen/dm000"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:paddingTop="@dimen/line_height"
+            android:scrollbars="none"></ListView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dm300"
+        android:drawablePadding="@dimen/dm030"
+        android:drawableTop="@drawable/ic_bg_no_data"
+        android:gravity="center"
+        android:text="@string/no_data"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/dm028"
+        android:visibility="gone" />
+
+</RelativeLayout>

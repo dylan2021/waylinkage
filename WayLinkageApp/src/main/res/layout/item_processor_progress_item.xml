@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dm030"
+    android:paddingTop="@dimen/dm030">
+
+
+    <TextView
+        android:id="@+id/progress_item_title_tv"
+        style="@style/px26_212121"
+        android:layout_width="@dimen/dm150"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/dm030"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/not_start_tag_iv"
+        style="@style/px26_212121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawablePadding="@dimen/dm010"
+        android:drawableRight="@drawable/ic_schedule_notstarted"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/dm030"
+        android:paddingTop="@dimen/dm003"
+        android:text=""
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dm050"
+        android:layout_marginTop="@dimen/dm003"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dm015"
+        android:paddingRight="@dimen/dm040">
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/progress_item_pb0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/progressbar_horizontal"
+            custom:progress_max="100"
+            custom:progress_reached_bar_height="@dimen/process_pb_height"
+            custom:progress_reached_color="@color/pb_plan_color"
+            custom:progress_text_color="@color/b3"
+            custom:progress_text_offset="@dimen/dm001"
+            custom:progress_text_size="@dimen/dm022"
+            custom:progress_text_visibility="visible"
+            custom:progress_unreached_color="@color/white" />
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/progress_item_pb1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/progressbar_horizontal"
+            custom:progress_max="100"
+            custom:progress_reached_bar_height="@dimen/process_pb_height"
+            custom:progress_reached_color="@color/pb_real_color"
+            custom:progress_text_color="@color/pb_real_color"
+            custom:progress_text_offset="@dimen/dm001"
+            custom:progress_text_size="@dimen/dm022"
+            custom:progress_text_visibility="visible"
+            custom:progress_unreached_color="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/plan_start_tiem_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/dm030"
+        android:background="@drawable/shape_white_yellow_8px"
+        android:drawableRight="@drawable/ic_next"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingBottom="@dimen/dm006"
+        android:paddingLeft="@dimen/dm010"
+        android:paddingRight="@dimen/dm010"
+        android:paddingTop="@dimen/dm006"
+        android:textColor="@color/yellow_overdue"
+        android:textSize="@dimen/dm026" />
+</LinearLayout>

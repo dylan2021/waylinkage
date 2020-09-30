@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dm025"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name_ciycle_tv"
+        android:layout_width="@dimen/dm060"
+        android:layout_height="@dimen/dm060"
+        android:singleLine="true"
+        android:includeFontPadding="false"
+        android:ellipsize="end"
+        android:layout_marginRight="@dimen/dm020"
+        android:background="@drawable/shape_circle_main_color"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm024" />
+    <TextView
+        android:id="@+id/name_tv"
+        style="@style/px26_666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm002"
+        android:layout_toRightOf="@id/name_ciycle_tv"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/remark_tv"
+        style="@style/px24_999"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_tv"
+        android:layout_marginTop="@dimen/dm008"
+        android:paddingBottom="@dimen/dm016"
+        android:layout_marginRight="@dimen/dm030"
+        android:lineSpacingExtra="@dimen/dm005"
+        android:layout_toRightOf="@id/name_ciycle_tv"
+        android:gravity="center_vertical"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/action_tv"
+        style="@style/px24_666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/name_tv"
+        android:layout_marginLeft="@dimen/dm015"
+        android:layout_marginTop="@dimen/dm005"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:paddingTop="@dimen/dm005"
+        android:paddingRight="@dimen/dm030"
+        android:textSize="@dimen/dm022"
+        android:textColor="@color/cccccc"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dm076"
+        android:layout_alignParentRight="true"
+        android:singleLine="true"
+        android:text="" />
+
+    <View
+        android:layout_width="@dimen/dm001"
+        android:layout_marginLeft="@dimen/dm030"
+        android:layerType="software"
+        android:background="@drawable/shape_vertical_dash_line_e5e5e5"
+        android:layout_below="@id/name_ciycle_tv"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/remark_tv"
+        />
+</RelativeLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_left_center"></include>
+
+    <include layout="@layout/layout_line_1px_divider"></include>
+
+    <com.android.waylinkage.view.PullScrollView
+        android:id="@+id/report_psv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm010"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dm020"
+                android:background="@drawable/shape_eeeeee_15px"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dm025"
+                android:paddingRight="@dimen/dm025">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="seleteProcessors">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="汇报事项" />
+
+                    <TextView
+                        android:id="@+id/report_add_gongxu_tv"
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm250"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="安全教育"
+
+                        android:textColorHint="@color/color_hint" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:visibility="gone"
+                    android:onClick="seleteContracts">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="标段" />
+
+                    <TextView
+                        android:id="@+id/report_add_hetongduan_tv"
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm250"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="请选择标段"
+                        android:maxLines="1"
+                        android:textColorHint="@color/color_hint" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:onClick="seleteGongQu">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="工地" />
+
+                    <TextView
+                        android:id="@+id/report_add_gongqu_tv"
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm250"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="请选择工地"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColorHint="@color/color_hint" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:clickable="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="确认人" />
+
+                    <TextView
+                        android:id="@+id/confirmor_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="请填写确认人"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dm250"
+                        android:text=""
+                        android:textColorHint="@color/color_hint" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/dm010"
+                    android:paddingLeft="@dimen/dm020"
+                    android:paddingTop="@dimen/dm015">
+
+                    <View
+                        android:layout_width="@dimen/dm005"
+                        android:layout_height="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm025"
+                        android:background="@color/mainColor" />
+
+                    <TextView
+                        android:id="@+id/layout_title_0_tv"
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="汇报内容" />
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/saft_train_layout"
+                    layout="@layout/layout_saft_report_train" />
+
+                <include
+                    android:id="@+id/saft_accident_layout"
+                    layout="@layout/layout_saft_report_accident"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/saft_accident_check"
+                    layout="@layout/layout_saft_report_check"
+                    android:visibility="gone" />
+
+
+                <include
+                    android:id="@+id/saft_accident_flag"
+                    layout="@layout/layout_saft_report_flag"
+                    android:visibility="gone" />
+
+                <!--警示标志-->
+                <com.android.waylinkage.view.ExRadioGroup xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/saft_accident_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:lineSpacing="@dimen/dm020" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_line_1px_divider"/>
+
+            <include
+                layout="@layout/layout_file_upload_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dm080"
+                android:layout_marginLeft="@dimen/dm045"
+                android:layout_marginRight="@dimen/dm045" />
+        </LinearLayout>
+    </com.android.waylinkage.view.PullScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_bt_height"
+        android:layout_marginTop="@dimen/dm015"
+        android:layout_marginBottom="@dimen/dm015"
+        android:layout_marginLeft="@dimen/dm025"
+        android:layout_marginRight="@dimen/dm025"
+        android:background="@drawable/selector_login_bt"
+        android:onClick="onReportCommitClick"
+        android:text="@string/commit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm030" />
+</LinearLayout>

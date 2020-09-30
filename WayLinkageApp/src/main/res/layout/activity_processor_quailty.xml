@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_left_center"></include>
+
+    <include layout="@layout/layout_line_1px_divider"></include>
+
+    <com.android.waylinkage.view.PullScrollView
+        android:id="@+id/report_psv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm006"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dm008"
+                android:paddingLeft="@dimen/dm020"
+                android:paddingTop="@dimen/dm015"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="@dimen/dm005"
+                    android:layout_height="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm025"
+                    android:background="@color/mainColor" />
+
+                <TextView
+                    style="@style/px26_212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="自检结果" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dm020"
+                android:background="@drawable/shape_eeeeee_15px"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dm025"
+                android:paddingRight="@dimen/dm025"
+                android:paddingTop="@dimen/dm010">
+
+                <com.android.waylinkage.view.MyExpandableListView
+                    android:id="@+id/expand_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/transparent"
+                    android:groupIndicator="@null"
+                    android:listSelector="@color/transparent"
+                    android:paddingBottom="@dimen/dm005" />
+
+                <include layout="@layout/layout_line_1px_white" />
+
+                <TextView
+                    android:id="@+id/status_content_tv"
+                    style="@style/px26_999"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/dm015"
+                    android:paddingBottom="@dimen/dm015"
+                    android:paddingLeft="@dimen/dm030"
+                    android:paddingTop="@dimen/dm015"
+                    android:text="" />
+                <include layout="@layout/layout_line_1px_white" />
+
+                <RelativeLayout
+                    android:id="@+id/card_detail_file_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dm030"
+                    android:paddingBottom="@dimen/dm010"
+                    android:paddingRight="@dimen/dm030">
+
+
+                    <TextView
+                        android:id="@+id/card_detail_file_title"
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dm060"
+                        android:gravity="center_vertical"
+                        android:text="@string/file_link_title" />
+
+
+                    <TextView
+                        android:id="@+id/file_link_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/app_title_height"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@drawable/ic_upload_attchment"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/color_hint"
+                        android:textSize="@dimen/dm026" />
+
+                    <com.android.waylinkage.view.ScrollListView
+                        android:id="@+id/horizontal_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_detail_file_title"
+                        android:clipToPadding="false"
+                        android:divider="@color/white"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:listSelector="@color/transparent"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"></com.android.waylinkage.view.ScrollListView>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.android.waylinkage.view.PullScrollView>
+</LinearLayout>

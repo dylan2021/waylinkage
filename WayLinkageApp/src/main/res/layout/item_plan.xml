@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dm310"
+    android:orientation="vertical"
+   >
+
+    <View
+        android:layout_width="@dimen/dm001"
+        android:layout_height="match_parent"
+        android:layerType="software"
+        android:layout_marginLeft="@dimen/dm039"
+        android:background="@drawable/shape_vertical_dash_line_main_color"
+        />
+
+    <TextView
+        android:id="@+id/positon_ciycle_tv"
+        android:layout_width="@dimen/dm038"
+        android:layout_height="@dimen/dm038"
+        android:layout_marginLeft="@dimen/dm020"
+        android:includeFontPadding="false"
+        android:layout_marginRight="@dimen/dm010"
+        android:background="@drawable/shape_circle_main_color"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm024" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        style="@style/px28_mainColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dm008"
+        android:layout_marginTop="@dimen/dm003"
+        android:layout_toRightOf="@id/positon_ciycle_tv"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/processor_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm005"
+        android:layout_toRightOf="@id/name_tv"
+        android:background="@drawable/shape_tab_unseleted"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingBottom="@dimen/dm002"
+        android:paddingLeft="@dimen/dm006"
+        android:paddingRight="@dimen/dm006"
+        android:paddingTop="@dimen/dm003"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/c2c3c8"
+        android:textSize="@dimen/dm020" />
+
+    <TextView
+        android:id="@+id/remark_tv"
+        style="@style/px24_999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dm030"
+        android:layout_marginTop="@dimen/dm006"
+        android:layout_toRightOf="@id/positon_ciycle_tv"
+        android:drawableRight="@drawable/ic_next"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="" />
+
+
+    <LinearLayout
+        android:id="@+id/plan_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name_tv"
+        android:layout_below="@id/name_tv"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dm030">
+
+        <LinearLayout
+            android:layout_width="@dimen/dm200"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/px26_999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/processor_item_padding_top"
+                android:text="@string/plan_invest" />
+
+            <TextView
+                style="@style/px26_999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/processor_item_padding_top"
+                android:text="@string/actual_invest" />
+
+            <TextView
+                style="@style/px26_999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/processor_item_padding_top"
+                android:text="@string/actual_start_end_date" />
+
+            <TextView
+                style="@style/px26_999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/processor_item_padding_top"
+                android:text="@string/plan_start_end_date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dm030">
+
+            <TextView
+                android:id="@+id/processor_plan_invest_tv"
+                style="@style/px26_666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/processor_item_padding_top" />
+
+            <TextView
+                android:id="@+id/processor_actual_invest_tv"
+                style="@style/px26_666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/processor_item_padding_top" />
+
+            <TextView
+                android:id="@+id/processor_actual_start_end_date_tv"
+                style="@style/px26_666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/processor_item_padding_top" />
+
+            <TextView
+                android:id="@+id/processor_plan_start_end_date_tv"
+                style="@style/px26_666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/processor_item_padding_top" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm001"
+        android:layout_alignLeft="@id/name_tv"
+        android:layout_below="@id/plan_bottom_layout"
+        android:layout_marginRight="@dimen/dm030"
+        android:background="@color/f5f5f5"
+        android:gravity="center_vertical" />
+</RelativeLayout>

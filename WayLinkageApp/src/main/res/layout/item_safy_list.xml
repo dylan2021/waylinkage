@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm015"
+        android:layout_marginRight="@dimen/dm015"
+        android:layout_marginTop="@dimen/line_height"
+        android:background="@drawable/shape_corner15px_white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dm020">
+
+        <TextView
+            android:id="@+id/report_item_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/dm028" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dm008"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next" />
+
+        <TextView
+            android:id="@+id/safy_item_tv1"
+            style="@style/px26_666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/report_item_title_tv"
+            android:layout_marginTop="@dimen/dm015"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/safy_item_tv2"
+            style="@style/px26_666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/safy_item_tv1"
+            android:layout_marginTop="@dimen/dm005"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:layout_below="@id/safy_item_tv2"
+            android:layout_marginTop="@dimen/dm015"
+            android:background="@color/divider_color"></View>
+
+        <TextView
+            android:id="@+id/safy_item_people_tv"
+            style="@style/px24_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/safy_item_tv2"
+            android:layout_marginTop="@dimen/dm030"
+            android:paddingBottom="@dimen/dm010"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/report_item_time_tv"
+            style="@style/px24_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/safy_item_tv2"
+            android:layout_marginTop="@dimen/dm030"
+            android:paddingBottom="@dimen/dm010"
+            android:text="" />
+    </RelativeLayout>
+</LinearLayout>

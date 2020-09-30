@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.waylinkage.view.PullScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/main_me_item_affiche"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm090"
+            android:background="@drawable/selector_bg_white_f2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dm036"
+                android:layout_height="@dimen/dm036"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/menu_idicate_red_tv"
+                android:layout_width="@dimen/dm013"
+                android:layout_height="@dimen/dm013"
+                android:layout_marginLeft="@dimen/dm070"
+                android:layout_marginTop="@dimen/dm020"
+                android:background="@drawable/shape_circle_red"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/dm010"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/menu_affiche_tv"
+                style="@style/px26_212121"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm060"
+                android:text="@string/affiche" />
+
+        </RelativeLayout>
+
+        <!--最新评论-->
+        <RelativeLayout
+            android:id="@+id/menu_comment_bt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm090"
+            android:background="@drawable/selector_bg_white_f2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dm036"
+                android:layout_height="@dimen/dm036"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/menu_comment_red_tv"
+                android:layout_width="@dimen/dm013"
+                android:layout_height="@dimen/dm013"
+                android:layout_marginLeft="@dimen/dm070"
+                android:layout_marginTop="@dimen/dm020"
+                android:background="@drawable/shape_circle_red"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/dm010"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/menu_comment_tv"
+                style="@style/px26_212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm060"
+                android:text="最新评论" />
+
+        </RelativeLayout>
+
+
+        <!--排名-->
+        <RelativeLayout
+            android:id="@+id/menu_rank_bt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm090"
+            android:background="@drawable/selector_bg_white_f2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dm036"
+                android:layout_height="@dimen/dm036"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                style="@style/px26_212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm060"
+                android:text="项目排名" />
+
+        </RelativeLayout>
+        <!--  .....................修改密码...................... -->
+        <RelativeLayout
+            android:id="@+id/main_me_item_change_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm090"
+            android:background="@drawable/selector_bg_white_f2"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dm040"
+            android:paddingRight="@dimen/dm030">
+
+            <ImageView
+                android:layout_width="@dimen/dm036"
+                android:layout_height="@dimen/dm036"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_me_password" />
+
+            <TextView
+                style="@style/px26_212121"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm060"
+                android:drawableRight="@drawable/ic_next"
+                android:text="@string/change_pwd" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_line_1px_divider"/>
+        <!--  .....................设置...................... -->
+        <RelativeLayout
+            android:id="@+id/main_me_item_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm090"
+            android:background="@drawable/selector_bg_white_f2"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dm040"
+            android:paddingRight="@dimen/dm030">
+
+            <ImageView
+                android:layout_width="@dimen/dm036"
+                android:layout_height="@dimen/dm036"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_me_setting" />
+
+            <TextView
+                style="@style/px26_212121"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm060"
+                android:drawableRight="@drawable/ic_next"
+                android:text="@string/setting" />
+        </RelativeLayout>
+        <include layout="@layout/layout_line_1px_divider"/>
+    </LinearLayout>
+
+</com.android.waylinkage.view.PullScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dm015"
+    android:paddingLeft="@dimen/dm030"
+    android:paddingTop="@dimen/dm015">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm060"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/px26_999"
+            android:layout_width="@dimen/dm200"
+            android:layout_height="wrap_content"
+            android:text="实际产值" />
+
+        <TextView
+            android:id="@+id/detail_actual_invers_tv"
+            style="@style/px26_212121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/inverse_plan_invers_tv"
+            style="@style/px24_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm006"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm060"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/px26_999"
+            android:layout_width="@dimen/dm200"
+            android:layout_height="wrap_content"
+            android:text="实际起始时间" />
+
+        <TextView
+            android:id="@+id/actual_start_end_date_tv"
+            style="@style/px26_212121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm060"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/px26_999"
+            android:layout_width="@dimen/dm200"
+            android:layout_height="wrap_content"
+            android:text="计划产值" />
+
+        <TextView
+            android:id="@+id/plan_invest_tv"
+            style="@style/px26_212121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dm060"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/px26_999"
+            android:layout_width="@dimen/dm200"
+            android:layout_height="wrap_content"
+            android:text="计划起始时间" />
+
+        <TextView
+            android:id="@+id/plan_start_end_date_tv"
+            style="@style/px26_212121"
+            android:lineSpacingExtra="@dimen/dm010"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+    </LinearLayout>
+
+</LinearLayout>

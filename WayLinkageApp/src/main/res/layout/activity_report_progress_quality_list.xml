@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tabs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/activity_report_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/left_bt"
+            style="@style/titlesize_666"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_back"
+            android:drawablePadding="@dimen/dp_10"
+            android:paddingLeft="@dimen/title_left_bt_padding_left"
+            android:paddingRight="@dimen/dm020" />
+
+        <com.android.waylinkage.view.MarqueTextView
+            android:id="@+id/center_tv"
+            style="@style/titlesize_212121"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxWidth="@dimen/dm580"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/on_filter_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:paddingLeft="@dimen/dm020"
+            android:paddingRight="@dimen/title_left_bt_padding_left"
+            android:paddingTop="@dimen/dm006"
+            android:src="@drawable/ic_safety_screen"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout xmlns:tabs="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fragment0_report_top_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:background="@color/white"
+        tabs:tabIndicatorColor="@color/mainColor"
+        tabs:tabIndicatorHeight="@dimen/tab_line_height"
+        tabs:tabSelectedTextColor="@color/mainColor"
+        tabs:tabTextAppearance="@style/TabLayout_TextStyle_px26"
+        tabs:tabTextColor="@color/tab_nomal_color" />
+
+    <include layout="@layout/layout_line_1px_divider" />
+
+    <LinearLayout
+        android:id="@+id/tab_buttom_tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm050"
+        android:background="@color/f5f5f5"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="@dimen/dm020"
+            android:layout_height="@dimen/dm010"
+            android:layout_marginLeft="@dimen/dm250"
+            android:background="@color/pb_plan_color"></View>
+
+        <TextView
+            style="@style/px22_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm008"
+            android:text="计划"></TextView>
+
+        <View
+            android:id="@+id/progress_real_view"
+            android:layout_width="@dimen/dm020"
+            android:layout_height="@dimen/dm010"
+            android:layout_marginLeft="@dimen/dm040"
+            android:background="@color/pb_real_color"></View>
+
+        <TextView
+            style="@style/px22_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm008"
+            android:text="实际"></TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ListView
+                android:id="@+id/hub_circle_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:background="@color/f5f5f5"
+                android:descendantFocusability="beforeDescendants"
+                android:divider="@color/divider_color"
+                android:dividerHeight="@dimen/dm000"
+                android:listSelector="@android:color/transparent"
+                android:overScrollMode="never"
+                android:paddingBottom="@dimen/dm020"
+                android:scrollbars="none" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <TextView
+            android:id="@+id/empty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dm300"
+            android:drawablePadding="@dimen/dm030"
+            android:drawableTop="@drawable/ic_bg_no_data"
+            android:gravity="center"
+            android:text="@string/no_data"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/dm028"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

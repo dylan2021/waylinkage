@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dm015"
+    android:layout_marginRight="@dimen/dm015"
+    android:layout_marginTop="@dimen/dm030"
+    android:background="@drawable/shape_eeeeee_15px"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dm015"
+    android:paddingRight="@dimen/dm015"
+    tools:showIn="@layout/fragment_project_0">
+
+    <LinearLayout
+        android:id="@+id/proj_fragment_top_ensure_status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/proj_fragment0_top_xmmc"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="项目名称" />
+
+        <TextView
+            android:id="@+id/project_fragment0_xmmc_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="-" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/project_fragment0_ztz"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总投资" />
+
+        <TextView
+            android:id="@+id/project_fragment0_ztz_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/project_fragment0_ztz"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+
+        <TextView
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/project_fragment0_ztz_tv"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/money_unit" />
+
+        <TextView
+            android:id="@+id/project_bianhao"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm320"
+            android:text="编号" />
+
+        <TextView
+            android:id="@+id/project_bianhao_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm025"
+            android:layout_toRightOf="@id/project_bianhao"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/project_zgq"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总工期" />
+
+        <TextView
+            android:id="@+id/project_zgq_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/project_zgq"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+
+        <TextView
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/project_zgq_tv"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/period_unit" />
+
+        <TextView
+            android:id="@+id/project_lenth"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm320"
+            android:text="总长" />
+
+        <TextView
+            android:id="@+id/project_lenth_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm025"
+            android:layout_toRightOf="@id/project_lenth"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+
+        <TextView
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/project_lenth_tv"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/lenth_unit" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/project_planBeginDate"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计划开工日期" />
+
+        <TextView
+            android:id="@+id/project_planBeginDate_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/project_planBeginDate"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/project_planEndDate"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计划完工日期" />
+
+        <TextView
+            android:id="@+id/project_planEndDate_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/project_planEndDate"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/project_startLocation"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起点地理位置" />
+
+        <com.android.waylinkage.view.MarqueTextView
+            android:id="@+id/project_startLocation_tv"
+            style="@style/px26_999"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:singleLine="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_toRightOf="@id/project_startLocation"
+            android:text="-" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/project_endLocation"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="终点地理位置" />
+
+        <com.android.waylinkage.view.MarqueTextView
+            android:id="@+id/project_endLocation_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:singleLine="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_toRightOf="@id/project_endLocation"
+            android:text="-" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dm010"
+        android:paddingTop="@dimen/dm020">
+
+        <TextView
+            android:id="@+id/project_desc"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="描述" />
+
+        <TextView
+            android:id="@+id/project_desc_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/desc_tv_line_spacing_extra"
+            android:text="-" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tabs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_left_center" />
+
+    <include layout="@layout/layout_line_1px_divider" />
+
+    <com.android.waylinkage.view.PullScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/f5f5f5"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm013"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dm002"
+            android:paddingTop="@dimen/dm008">
+
+            <RelativeLayout
+                android:id="@+id/confirm_things_bt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/px24_212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/dm010"
+                    android:drawableTop="@drawable/ic_monitor_01"
+                    android:paddingBottom="@dimen/dm020"
+                    android:paddingTop="@dimen/dm020"
+                    android:text="@string/report_things" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dm080"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/dm012">
+
+                    <TextView
+                        android:id="@+id/confirm_things_num_red_tv"
+                        android:layout_width="@dimen/dm025"
+                        android:layout_height="@dimen/dm025"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/shape_circle_red"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dm016"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/employee_manager_bt"
+                style="@style/px24_212121"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="@dimen/dm010"
+                android:drawableTop="@drawable/ic_monitor_02"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dm020"
+                android:paddingTop="@dimen/dm020"
+                android:text=""
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/device_manager_bt"
+                style="@style/px24_212121"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="@dimen/dm010"
+                android:drawableTop="@drawable/ic_monitor_03"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dm020"
+                android:paddingTop="@dimen/dm020"
+                android:text=""
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/materail_manager_bt"
+                style="@style/px24_212121"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="@dimen/dm010"
+                android:drawableTop="@drawable/ic_monitor_04"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dm020"
+                android:paddingTop="@dimen/dm020"
+                android:text=""
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/plans_bt"
+                style="@style/px24_212121"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="@dimen/dm010"
+                android:drawableTop="@drawable/ic_monitor_05"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dm020"
+                android:paddingTop="@dimen/dm020"
+                android:text="工序计划"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/note_manager_bt"
+                style="@style/px24_212121"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="@dimen/dm010"
+                android:drawableTop="@drawable/ic_monitor_06"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dm020"
+                android:paddingTop="@dimen/dm020"
+                android:text="@string/note_manager"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/data_manager_bt"
+                style="@style/px24_212121"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="@dimen/dm008"
+                android:drawableTop="@drawable/ic_monitor_07"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dm020"
+                android:paddingTop="@dimen/dm020"
+                android:text=""
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/empty_bt"
+                style="@style/px24_212121"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingBottom="@dimen/dm020"
+                android:paddingTop="@dimen/dm020"
+                android:text=""
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.android.waylinkage.view.PullScrollView>
+</LinearLayout>

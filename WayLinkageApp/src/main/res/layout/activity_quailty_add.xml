@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_left_center"></include>
+
+    <include layout="@layout/layout_line_1px_divider"></include>
+
+    <com.android.waylinkage.view.PullScrollView
+        android:id="@+id/report_psv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm010"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dm020"
+                android:background="@drawable/shape_eeeeee_15px"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dm025"
+                android:visibility="gone"
+                android:paddingRight="@dimen/dm025">
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:clickable="true"
+                    android:onClick="seleteContracts">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="标段" />
+
+                    <TextView
+                        android:id="@+id/report_add_hetongduan_tv"
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:hint="选择标段"
+                        android:maxLines="1"
+                        android:paddingRight="@dimen/dm030"
+                        android:textColorHint="@color/color_hint" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:onClick="seleteGongQu">
+
+                    <TextView
+                        style="@style/px26_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="工地" />
+
+                    <TextView
+                        android:id="@+id/report_add_gongqu_tv"
+                        style="@style/px26_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:hint="选择工地"
+                        android:maxLines="1"
+                        android:paddingRight="@dimen/dm030"
+                        android:text=""
+                        android:textColorHint="@color/color_hint" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+
+
+
+                <include layout="@layout/layout_line_1px_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/report_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm080"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm015"
+                    android:background="@drawable/shape_eeeeee_15px"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dm010"
+                    android:paddingLeft="@dimen/dm025"
+                    android:paddingRight="@dimen/dm025">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/app_title_height"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:onClick="seleteQualityProcessors">
+
+                        <TextView
+                            style="@style/px26_666"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="工序" />
+
+                        <TextView
+                            android:id="@+id/report_add_gongxu_tv"
+                            style="@style/px26_999"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical|right"
+                            android:hint="选择工序"
+                            android:maxLines="1"
+                            android:paddingRight="@dimen/dm030"
+                            android:text=""
+
+                            android:textColorHint="@color/color_hint" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_next" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/layout_line_1px_white" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/app_title_height"
+                        android:clickable="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/check_type_title"
+                            style="@style/px26_666"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/check_type" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_next" />
+
+                        <TextView
+                            android:id="@+id/check_type_tv"
+                            style="@style/px26_999"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical|right"
+                            android:hint="未选择"
+                            android:maxLines="2"
+                            android:paddingLeft="@dimen/dm130"
+                            android:paddingRight="@dimen/dm030"
+                            android:text=""
+                            android:textColorHint="@color/color_hint" />
+
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/layout_line_1px_white" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/app_title_height"
+                        android:clickable="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            style="@style/px26_666"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:text="检查结果" />
+
+                        <RadioGroup
+                            android:id="@+id/quality_rg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/quality_rb_0"
+                                android:layout_width="@dimen/dm090"
+                                android:layout_height="@dimen/dm044"
+                                android:layout_gravity="right|center_vertical"
+                                android:background="@drawable/selector_fragment_2_dialog_tab"
+                                android:button="@null"
+                                android:checked="true"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text="通过"
+                                android:textColor="@color/color_seletor_main_color_hint"
+                                android:textSize="@dimen/dm026" />
+
+                            <RadioButton
+                                android:id="@+id/quality_rb_1"
+                                android:layout_width="@dimen/dm095"
+                                android:layout_height="@dimen/dm045"
+                                android:layout_marginLeft="@dimen/dm040"
+                                android:background="@drawable/selector_fragment_2_dialog_tab"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text=""
+                                android:textColor="@color/color_seletor_main_color_hint"
+                                android:textSize="@dimen/dm026"
+                                android:visibility="gone" />
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                    <com.android.waylinkage.view.MyExpandableListView
+                        android:id="@+id/expand_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/transparent"
+                        android:groupIndicator="@null"
+                        android:listSelector="@color/transparent" />
+
+                    <include layout="@layout/layout_file_upload_layout" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.android.waylinkage.view.PullScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_bt_height"
+        android:layout_marginTop="@dimen/dm015"
+        android:layout_marginBottom="@dimen/dm015"
+        android:layout_marginLeft="@dimen/dm025"
+        android:layout_marginRight="@dimen/dm025"
+        android:background="@drawable/selector_login_bt"
+        android:onClick="onReportCommitClick"
+        android:text="@string/commit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm030" />
+
+</LinearLayout>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/saft_train_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dm020"
+    android:layout_marginRight="@dimen/dm020"
+    android:layout_marginBottom="@dimen/dm015"
+    android:layout_marginTop="@dimen/dm015"
+    android:background="@drawable/shape_eeeeee_15px"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dm005"
+    android:paddingTop="@dimen/dm005"
+    android:paddingLeft="@dimen/dm025"
+    android:paddingRight="@dimen/dm025"
+    tools:showIn="@layout/activity_safy_add">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+      >
+
+        <TextView
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="事故时间" />
+
+        <TextView
+            android:id="@+id/accident_time_tv"
+            style="@style/px26_666"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:hint="未填写"
+            android:maxLines="1"
+            android:paddingRight="@dimen/dm030"
+            android:textColorHint="@color/color_hint"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next" />
+    </RelativeLayout>
+    <include layout="@layout/layout_line_1px_white" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height">
+
+        <TextView
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="事故地点" />
+
+        <TextView
+            android:id="@+id/accident_address_tv"
+            style="@style/px26_666"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:hint="未填写"
+            android:maxLines="1"
+            android:paddingRight="@dimen/dm030"
+            android:textColorHint="@color/color_hint" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next" />
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height">
+
+        <TextView
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="事故责任人" />
+
+        <TextView
+            android:id="@+id/accident_trainer_tv"
+            style="@style/px26_666"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:hint="未填写"
+            android:maxLines="1"
+            android:paddingRight="@dimen/dm030"
+            android:textColorHint="@color/color_hint" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height">
+
+        <TextView
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="安全责任人" />
+
+        <TextView
+            android:id="@+id/accident_content_tv"
+            style="@style/px26_666"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:hint="未填写"
+            android:maxLines="1"
+            android:paddingRight="@dimen/dm030"
+            android:textColorHint="@color/color_hint" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next" />
+
+    </RelativeLayout>
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height">
+
+        <TextView
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="事故原因" />
+
+        <TextView
+            android:id="@+id/accident_target_tv"
+            style="@style/px26_666"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:hint="未填写"
+            android:maxLines="1"
+            android:paddingRight="@dimen/dm030"
+            android:textColorHint="@color/color_hint" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height">
+
+        <TextView
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="伤亡程度" />
+
+        <TextView
+            android:id="@+id/lossLevel_tv"
+            style="@style/px26_666"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:hint="未填写"
+            android:maxLines="1"
+            android:paddingRight="@dimen/dm030"
+            android:textColorHint="@color/color_hint" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height">
+
+        <TextView
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="直接经济损失" />
+
+        <TextView
+            android:id="@+id/accident_plan_in_people_tv"
+            style="@style/px26_666"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:hint="未填写(万元)"
+            android:maxLines="1"
+            android:paddingRight="@dimen/dm030"
+            android:textColorHint="@color/color_hint" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height">
+
+        <TextView
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="间接经济损失" />
+
+        <TextView
+            android:id="@+id/accident_real_in_people_tv"
+            style="@style/px26_666"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:hint="未填写(万元)"
+            android:maxLines="1"
+            android:paddingRight="@dimen/dm030"
+            android:textColorHint="@color/color_hint" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height">
+
+        <TextView
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="应急措施" />
+
+        <TextView
+            android:id="@+id/emergency_tv"
+            style="@style/px26_666"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:hint="未填写"
+            android:maxLines="1"
+            android:paddingRight="@dimen/dm030"
+            android:textColorHint="@color/color_hint" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1px_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+    >
+
+        <TextView
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="处理完成时间" />
+
+        <TextView
+            android:id="@+id/confirm_time_tv"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dm030"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="未选择"
+            android:maxLines="1"
+            android:textColorHint="@color/color_hint" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next" />
+    </RelativeLayout>
+</LinearLayout>

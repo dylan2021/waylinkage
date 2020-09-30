@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height">
+
+    <RelativeLayout
+        android:id="@+id/proj_fragment_top_enter_people_layout"
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/item_height"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/overview_detail_item_left_tv"
+            style="@style/px26_212121"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="@dimen/item_height"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/overview_detail_item_right_tv"
+            style="@style/px26_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dm020"
+            android:paddingBottom="@dimen/dm020"
+            android:layout_marginLeft="@dimen/dm085"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="" />
+
+        <include
+            layout="@layout/layout_line_1px_white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:layout_alignParentBottom="true"></include>
+    </RelativeLayout>
+</LinearLayout>

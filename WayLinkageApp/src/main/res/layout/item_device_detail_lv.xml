@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ngame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/f5f5f5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dm005"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dm030">
+
+        <TextView
+            android:id="@+id/device_item_tv_1"
+            style="@style/px26_212121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/device_item_tv_0"
+            style="@style/px26_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/dm015" />
+
+        <TextView
+            android:id="@+id/device_detail_see_bt"
+            style="@style/px26_mainColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/dm015"
+            android:drawableRight="@drawable/ic_next"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:padding="@dimen/dm025"
+            android:text="查看详情" />
+    </RelativeLayout>
+</LinearLayout>

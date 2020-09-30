@@ -1,0 +1,239 @@
+<resources>
+
+    <string name="appName">智慧路桥</string>
+
+    <string name="image_des">图片描述信息</string>
+
+    <string name="back">返回</string>
+    <string name="more">更多</string>
+    <string name="sure">确定</string>
+    <string name="close">关闭</string>
+    <string name="cancel">取消</string>
+    <string name="help">帮助</string>
+
+    <string name="login_now">登录</string>
+    <string name="login_name_hint">用户名</string>
+    <string name="login_pwd_hint">密码</string>
+    <string name="login_other">使用更多方式登录</string>
+
+    <string name="find_pwd">找回密码</string>
+    <string name="find_now">立即找回</string>
+    <string name="find_new"><font size="15">请输入6-16位新密码</font></string>
+
+    <string name="register_title">注册</string>
+    <string name="register_mobile"><font size="15">输入账号</font></string>
+    <string name="register_captcha"><font size="15">输入验证码</font></string>
+    <string name="register_get_captcha">获取验证码</string>
+    <string name="register_password"><font size="15">输入6-16位密码</font></string>
+    <string name="register">立即注册</string>
+    <string name="register_text">注册代表您同意</string>
+
+
+    <!-- 下载更新 -->
+    <string name="update_check">检测更新</string>
+    <string name="update_find_new">发现新的版本 V1.0.1</string>
+    <string name="update_ing">更新中：</string>
+    <string name="update_now">立即更新</string>
+    <string name="update_later">不升级</string>
+    <string name="update_cancel">取消</string>
+    <string name="update_background">后台运行</string>
+    <string name="update_goon">继续更新</string>
+    <string name="download">下载</string>
+
+    <!-- Manager相关 -->
+    <string name="manage_history">历史记录</string>
+    <string name="manage_download">下载记录</string>
+    <string name="manage_contact">联系我们</string>
+    <string name="setting">设置</string>
+    <string name="manage_disclaimer">免责声明</string>
+
+    <!-- 用户中心相关 -->
+    <string name="user_info">账号信息</string>
+    <string name="user_photo">头像</string>
+    <string name="user_nick_name">我的昵称</string>
+    <string name="user_level">我的等级</string>
+    <string name="user_nb">我的N币</string>
+    <string name="user_level_nb">等级与N币</string>
+    <string name="user_sex">性别</string>
+    <string name="user_birthday">生日</string>
+    <string name="user_address">地址</string>
+    <string name="user_logout">退出登录</string>
+
+
+    <!-- 网络加载相关 -->
+    <string name="loading">加载中...</string>
+    <string name="load_end">加载失败，稍后重试</string>
+    <string name="reload">重新加载</string>
+
+    <string name="pushmsg_center_no_more_msg">已经到底了哦</string>
+    <string name="pushmsg_center_pull_up_text">松开加载更多</string>
+    <string name="pushmsg_center_pull_down_text">下拉可以刷新</string>
+    <string name="pushmsg_center_pull_release_text">松开获取更多</string>
+    <string name="pushmsg_center_pull_down_update_time">上次刷新时间 : </string>
+    <string name="pushmsg_center_load_more_ongoing_text">正在加载中</string>
+    <string name="xsearch_loading">正在刷新…</string>
+    <string name="pull_to_refresh_header_hint_normal">@string/pushmsg_center_pull_down_text</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后刷新</string>
+    <string name="pull_to_refresh_header_hint_loading">@string/pushmsg_center_load_more_ongoing_text</string>
+    <string name="pull_to_refresh_header_last_time">@string/pushmsg_center_pull_down_update_time</string>
+    <string name="pull_to_refresh_footer_hint_ready">松开载入更多</string>
+    <string name="pull_to_refresh_refreshing_label_fan">@string/pull_to_refresh_header_hint_loading</string>
+    <string name="no_more_data">@string/pushmsg_center_no_more_msg</string>
+    <string name="pull_to_refresh_network_error">网络繁忙，请稍候重试</string>
+    <string name="no_network">网络异常,请检查网络设置</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="see_more">查看全部</string>
+    <string name="account">账号</string>
+    <string name="requery_failed">服务器繁忙,请稍后重试</string>
+    <string name="server_exception">服务器繁忙</string>
+    <string name="server_exception_2_pullrefresh">服务器繁忙,请稍后再试~</string>
+    <string name="game_hub">圈子</string>
+    <string name="download_count_end">下载</string>
+    <string name="pwd_change_success_reLogin_msg">密码修改成功,请重新登录</string>
+    <string name="reLogin">重新登录"</string>
+    <string name="unkonw">--</string>
+    <string name="unkonw_str">未知</string>
+    <string name="to_precent">提交评分</string>
+    <string name="precented">已评分</string>
+    <string name="open">打开</string>
+    <string name="no_data">暂无数据</string>
+
+    <string name="install_apk_lost_redownload">安装包文件丢失\n请重新下载</string>
+    <string name="ok">好的</string>
+    <string name="main_bottom_tab_03">消息</string>
+    <string name="app_download_url_yyb">http://wayLinkage.com </string>
+    <string name="alipay_redpackage_content">7Dl59e13pi</string>
+    <string name="forgeter_pwd">忘记密码?</string>
+    <string name="main_top_title_tab_1">看板</string>
+    <string name="main_bottom_tab_04">我的</string>
+    <string name="main_bottom_tab_1">预警</string>
+    <string name="main_bottom_tab_0">监控</string>
+    <string name="main_bottom_tab_2">预警</string>
+    <string name="phone">手机号</string>
+    <string name="no_edited_yet">未填写</string>
+    <string name="email">邮箱</string>
+    <string name="me_sync">同步</string>
+
+    <string name="change">修改</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="clean_cache">清除缓存</string>
+    <string name="other">其他</string>
+    <string name="affiche">公告通知</string>
+    <string name="share">二维码分享</string>
+    <string name="look_board">看板</string>
+    <string name="me_profile">我的资料</string>
+    <string name="nick_name">昵称</string>
+    <string name="choose_from_loc_pic">从相册选择</string>
+    <string name="save">保存</string>
+    <string name="enter_account">输入账号</string>
+    <string name="all_msg">全部通知</string>
+    <string name="unRead_msg">未读通知</string>
+    <string name="query_by_project">按项目查询</string>
+    <string name="add">添加</string>
+    <string name="project">项目</string>
+    <string name="work">工程</string>
+    <string name="warning">预警</string>
+    <string name="enter_project_name">请输入项目名称</string>
+    <string name="enter_proj_subtitle_optional">项目副标题 (选填)</string>
+    <string name="proj_open_ness">项目公开性</string>
+    <string name="str_quality">质量汇报</string>
+    <string name="primary_cover">预选封面</string>
+    <string name="str_progress">进度汇报</string>
+    <string name="enter_cannot_empty">输入内容不能为空</string>
+    <string name="proj_cannot_empty">项目名不能为空</string>
+    <string name="commit_success">提交成功</string>
+    <string name="create_proj_faild">项目创建失败,稍后重试</string>
+    <string name="get_img_faild">获取背景图失败</string>
+    <string name="card_title">卡片标题</string>
+    <string name="list_title">列表标题</string>
+    <string name="fragment_opened">查看更多</string>
+    <string name="fragment_closed">收起</string>
+    <string name="on_list">在列表</string>
+    <string name="zhong">中</string>
+    <string name="add_card_describe">添加卡片描述</string>
+    <string name="delete_faild">删除失败</string>
+    <string name="open_file"><u>在...中打开</u></string>
+    <string name="main_fragment0_load_title">高速公路建设项目</string>
+    <string name="fragment0_pupup_load_title">武汉盛世利华公司承建     全长1845km</string>
+    <string name="query">查询</string>
+    <string name="title_sljgc">石料加工厂</string>
+
+    <string name="title_bhz">拌合站</string>
+    <string name="title_xzyd">需征用地</string>
+    <string name="title_yfkc">压覆矿产</string>
+    <string name="title_ps">炮损</string>
+    <string name="title_jiao_cha">交叉</string>
+    <string name="title_lin_jin">临近</string>
+    <string name="title_ying_xiang">影响</string>
+    <string name="title_gdys">工地用水</string>
+    <string name="title_wgmz">挖沟埋桩</string>
+
+    <string name="pdf_text_0"><u>施工前准备实验资料.pdf</u></string>
+    <string name="pdf_text_1"><u>各类配合比批复.pdf</u></string>
+    <string name="pdf_text_2"><u>施工方案简要说明.pdf</u></string>
+    <string name="filter">筛选</string>
+    <string name="complete">完成</string>
+    <string name="commit">提交</string>
+    <string name="update">修改</string>
+
+    <string name="title_anquanjiaoyu">安全教育</string>
+    <string name="title_anquanyhpc">安全隐患排查</string>
+    <string name="title_safety_accident">安全事故</string>
+
+    <string name="title_jingshibiaozhi">警示标志</string>
+    <string name="title_anquanfanhuyongpin">安全防护用品</string>
+
+    <string name="title_jishugongzhong">技术工种</string>
+    <string name="login_failed">登录失败,请检查用户名密码或稍后重试</string>
+    <string name="request_failed_retry_later">请求异常,稍后重试</string>
+    <string name="overdue">已逾期</string>
+    <string name="nomal">正常</string>
+    <string name="qualified">合格</string>
+    <string name="unqualified">不合格</string>
+    <string name="money_unit">万元</string>
+    <string name="unit">单位</string>
+    <string name="period_unit">天</string>
+    <string name="lenth_unit">公里</string>
+    <string name="time_dialog_title_cancel">&#160;&#160;取消</string>
+    <string name="time_dialog_title_sure">确定&#160;&#160;</string>
+    <string name="width_height_unit">M</string>
+    <string name="speed_unit">km/h</string>
+    <string name="unreport_content_progress">该计划的上条汇报还未被确认,
+        此时不能增加新的汇报。</string>
+    <string name="finished">完成</string>
+    <string name="check_type">检查项</string>
+    <string name="unreport_content_quality">该工序下的上条汇报还未被确认，此时不能增加新的汇报。</string>
+    <string name="work_has_started">该工地已处于开工状态,请勿重复申请。</string>
+    <string name="work_has_finished">完工申请提交失败,\n原因:该工地非开工状态。</string>
+    <string name="file_link_title">添加附件</string>
+    <string name="file_link_list">附件</string>
+    <string name="work_finish_hint">请填写资质证号</string>
+    <string name="agress">同意</string>
+    <string name="reject">驳回</string>
+    <string name="work_start_pre_str">前期工作</string>
+    <string name="report_things">审批事项</string>
+    <string name="plan_in_date">计划进场日期</string>
+    <string name="plan_in_numbers">计划进场数量</string>
+    <string name="plan_in_out_date_str">计划进场 - 退场日期</string>
+    <string name="materail_type">材料名称</string>
+    <string name="materail_spec">材料规格</string>
+    <string name="factory">厂商</string>
+    <string name="groups_cant_delete">该类型下存在关联数据信息，此时无法删除。</string>
+    <string name="endtime_must_later_than_starttime">结束时间不得早于开始时间</string>
+    <string name="begin_end_date_must_be_before_now">实际开始/结束时间不得晚于今天</string>
+    <string name="cannot_later_than_today">不能超过今日</string>
+    <string name="plan_invest">计划产值</string>
+    <string name="actual_invest">实际产值</string>
+    <string name="plan_numbers">计划数量</string>
+    <string name="actual_start_end_date">实际起始时间</string>
+    <string name="plan_start_end_date">计划起始时间</string>
+    <string name="input_type_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@._-</string>
+    <string name="note_manager">施工日志</string>
+    <string name="data_manager">资料管理</string>
+    <string name="search">查询</string>
+    <string name="alarm_msg">全部</string>
+    <string name="reform_ok">审核通过</string>
+    <string name="device_type">设备类型</string>
+    <string name="take_photo">拍照</string>
+</resources>

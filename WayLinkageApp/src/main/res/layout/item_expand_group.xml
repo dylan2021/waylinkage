@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ngame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/expand_arrow"
+        android:layout_width="@dimen/dm020"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_group_indicator" />
+
+    <TextView
+        android:id="@+id/label_expand_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/dm010"
+        android:paddingLeft="@dimen/dm010"
+        android:paddingTop="@dimen/dm020"
+        android:textColor="@color/color666666"
+        android:textSize="@dimen/dm026" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/expand_check_box"
+        android:layout_width="wrap_content"
+        android:paddingTop="@dimen/dm015"
+        android:gravity="center"
+        android:paddingRight="@dimen/dm030"
+        android:button="@drawable/selector_checkbox_maincolor"
+        android:paddingBottom="@dimen/dm010"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:theme="@style/mainColor666CheckBox" />
+
+</LinearLayout>

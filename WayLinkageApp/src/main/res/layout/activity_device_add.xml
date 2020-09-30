@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:onClick="onBackClick"
+            android:paddingLeft="@dimen/dm030"
+            android:paddingRight="@dimen/dm030"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="新增设备"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/title_size" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_line_1px_divider" />
+
+    <com.android.waylinkage.view.PullScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dm050"
+                android:layout_marginTop="@dimen/dm030"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dm010"
+                android:paddingLeft="@dimen/dm040"
+                android:paddingRight="@dimen/dm020">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="名称" />
+
+                    <EditText
+                        android:id="@+id/device_name_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/device_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="请填写设备名称"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dm050"
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+                <include layout="@layout/layout_line_1px_divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="编号" />
+
+                    <EditText
+                        android:id="@+id/device_code_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/device_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="请填写设备编号"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dm050"
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+                <include layout="@layout/layout_line_1px_divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="型号" />
+
+                    <EditText
+                        android:id="@+id/device_xin_hao_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/device_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="请填写设备型号"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dm050"
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/app_title_height"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="实际进场日期" />
+
+                    <TextView
+                        android:id="@+id/real_in_date_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/app_title_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm050"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="请选择时间"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/device_add_margin_left"
+                        android:textColorHint="@color/color999999" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/app_title_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:gravity="center_vertical"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_divider" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/app_title_height"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="运行状态" />
+
+                    <TextView
+                        android:id="@+id/work_status_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/app_title_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm050"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="请选择状态"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/device_add_margin_left"
+                        android:textColorHint="@color/color999999" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/app_title_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:gravity="center_vertical"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/app_title_height"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="来源" />
+
+                    <TextView
+                        android:id="@+id/source_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/app_title_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm050"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="请选择来源"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/device_add_margin_left"
+                        android:textColorHint="@color/color999999" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/app_title_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:gravity="center_vertical"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="负责人" />
+
+                    <EditText
+                        android:id="@+id/belong_people_name_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/device_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="请填写姓名"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dm050"
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_title_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/px26_212121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="负责人电话" />
+
+                    <EditText
+                        android:id="@+id/belong_people_phone_tv"
+                        style="@style/px26_666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/device_add_margin_left"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="请填写电话"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dm050"
+                        android:textColorHint="@color/color_hint" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_1px_divider" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.android.waylinkage.view.PullScrollView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_bt_height"
+        android:layout_marginTop="@dimen/dm015"
+        android:layout_marginBottom="@dimen/dm015"
+        android:layout_marginLeft="@dimen/dm025"
+        android:layout_marginRight="@dimen/dm025"
+        android:background="@drawable/selector_login_bt"
+        android:onClick="deviceAddSaveClick"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm030" />
+</LinearLayout>
